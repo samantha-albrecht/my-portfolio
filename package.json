@@ -1,0 +1,27 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samantha-albrecht/my-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samantha-albrecht/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/samantha-albrecht/my-portfolio#readme",
+  "dependencies": {
+    "next": "^11.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
