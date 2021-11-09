@@ -1,0 +1,11 @@
+@import url("https://use.typekit.net/dpm3ksq.css");
+@import '~sanitize.css';
+@import '~sanitize.css/forms.css';
+@import '~sanitize.css/typography.css';
+
+body {
+    font-family: canada-type-gibson,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+}
