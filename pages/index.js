@@ -1,16 +1,15 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Hero from '../components/homepage/Hero/Hero'
 
 function Home () {
     return (
     <> 
         <Head>
-            <title>Samantha Albrecht | Web Developer</title>
+            <title>Samantha Albrecht | Web Designer + Developer</title>
         </Head>
 
-        <a href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/" >
-            <h1>👩‍💻 portfolio coming soon...</h1>
-        </a>
+        <Hero/>
 
         <Link href="/about">
             <a>About</a>

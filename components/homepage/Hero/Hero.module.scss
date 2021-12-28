@@ -1,0 +1,30 @@
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  z-index: 1;
+}
+
+.guides {
+  display: grid;
+  grid: 1fr / repeat(2, 1fr);
+  height: 100%;
+}
+
+.guide {
+  border-width: 1px;
+  border-style: dashed;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+
+  &:first-of-type {
+    border-left-color: var(--guide-color);
+  }
+
+  &:last-of-type {
+    border-right-color: var(--guide-color);
+  }
+}

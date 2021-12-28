@@ -1,4 +1,4 @@
-.container {
-    background-color: grey;
+.wrapper {
     display: flex;
+    padding: 20px;
 }

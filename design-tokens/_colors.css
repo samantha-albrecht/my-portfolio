@@ -1,0 +1,29 @@
+html {
+  --white: #fff;
+
+  --indigo-100: #f2f6ff;
+  --indigo-200: #dfe7ff;
+  --indigo-300: #b2c8fb;
+  --indigo-400: #79a1f8;
+  --indigo-500: #527ceb;
+  --indigo-600: #3b64d2;
+  --indigo-700: #2549a8;
+  --indigo-800: #16337f;
+  --indigo-900: #071e57;
+
+  --lt-gray-200: #f9fafa;
+  --lt-gray-300: #f1f3f5;
+  --lt-gray-400: #e5e9ec;
+  --lt-gray-500: #d5dce1;
+  --lt-gray-600: #c5ced6;
+  --lt-gray-700: #b7c2cc;
+  --lt-gray-800: #a5b2bd;
+
+  --dk-gray-200: #93a1b0;
+  --dk-gray-300: #748494;
+  --dk-gray-400: #556575;
+  --dk-gray-500: #405261;
+  --dk-gray-600: #314351;
+  --dk-gray-700: #253642;
+  --dk-gray-800: #1d2b36;
+}
