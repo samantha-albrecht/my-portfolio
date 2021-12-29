@@ -1,0 +1,56 @@
+@import "./colors.scss";
+@import "./typography.scss";
+
+html {
+  --background-color: var(--white);
+  --text-color: var(--dk-gray-800);
+  --nav-color: var(--indigo-600);
+  --caption-color: var(--indigo-600);
+  --link-color: var(--indigo-500);
+  --primary-button-background-color: var(--indigo-500);
+  --primary-button-background-color-hover: var(--indigo-700);
+  --secondary-button-color: var(--indigo-600);
+  --secondary-button-background-color: var(--transparent);
+  --secondary-button-border-color: var(--indigo-500);
+  --secondary-button-background-color-hover: var(--indigo-200);
+  --knockout-color: var(--white);
+  --guide-color: var(--indigo-300);
+
+  --lt-card-color: var(--indigo-100);
+  --dk-card-color: var(--indigo-900);
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 12px;
+
+  --title-copy: var(--font-family) var(--font-weight-bold) var(--font-2xl);
+  --caption-copy: var(--mono-font-family) var(--mono-font-weight-regular)
+    var(--font-m);
+  --body-copy: var(--font-family) var(--font-weight-book) var(--font-m);
+  --nav-copy: var(--mono-font-family) var(--mono-font-weight-regular)
+    var(--font-m);
+}
+
+/* .theme--light {
+    --backgroundColor:#f3f5fc;
+    --textColor: #00092b;
+    --titleColor: #4f79ff;
+    --linkColor: #4f79ff;
+    --buttonColor: #4f79ff;
+    --buttonBorderColor: #4f79ff;
+    --buttonHoverColor: #144cff;
+    --knockoutColor: #fff;
+    --guidesColor: rgba(156,179,255,0.75);
+}
+
+.theme--dark {
+    --backgroundColor:#00092b;
+    --textColor: #fff;
+    --titleColor: #4f79ff;
+    --linkColor: #4f79ff;
+    --buttonColor: #4f79ff;
+    --buttonBorderColor: #4f79ff;
+    --buttonHoverColor: #144cff;
+    --knockoutColor: #fff;
+    --guidesColor: rgba(156,179,255,0.75);
+} */

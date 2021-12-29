@@ -1,30 +1,25 @@
-.background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: pink;
-  z-index: 1;
+@import "../../../design-tokens/scss-variables.scss";
+
+.contentInner {
+  grid-area: 1 / 1 / 2 / 5;
+  padding: 148px 0;
+
+  @media (min-width: $breakpoint-l) {
+    grid-area: 1 / 2 / 2 / 5;
+  }
 }
 
-.guides {
-  display: grid;
-  grid: 1fr / repeat(2, 1fr);
-  height: 100%;
+.caption {
+  font-family: var(--mono-font-family);
+  font-weight: var(--mono-font-weight-regular);
+  font-size: var(--font-size-ms);
+  color: var(--caption-color);
+  margin-bottom: 4px;
 }
 
-.guide {
-  border-width: 1px;
-  border-style: dashed;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-
-  &:first-of-type {
-    border-left-color: var(--guide-color);
-  }
-
-  &:last-of-type {
-    border-right-color: var(--guide-color);
-  }
+.title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin-bottom: 24px;
 }

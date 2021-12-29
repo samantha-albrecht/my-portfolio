@@ -1,4 +1,11 @@
+@import "../../design-tokens/scss-variables.scss";
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   &.animateSlideIn {
     transition: all 0.5s ease-in-out;
   }
@@ -10,6 +17,7 @@
     right: 0;
 
     .headerContainer {
+      background-color: var(--background-color);
       box-shadow: 0 3px 14px 0 rgba(79, 121, 255, 0.3);
     }
   }
@@ -25,7 +33,6 @@
   z-index: 2;
   padding: 16px 16px 11px;
   margin: 16px;
-  background-color: var(--background-color);
   color: var(--nav-color);
   border-radius: var(--border-radius-md);
 }
@@ -99,7 +106,7 @@
   transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: var(--secondary-button-hover-color);
+    background-color: var(--secondary-button-background-color-hover);
   }
 }
 
@@ -110,7 +117,6 @@
   bottom: 0;
   left: 16px;
   right: 0;
-  background-color: var(--background-color);
   padding: 24px 32px;
   border-top-left-radius: var(--border-radius-lg);
   box-shadow: 0 3px 14px 0 rgba(79, 121, 255, 0.3);
@@ -118,6 +124,7 @@
   transition: transform 0.3s ease-in-out;
 
   &.fullNavVisible {
+    background-color: var(--background-color);
     transform: translateX(0);
 
     .navList {
@@ -140,7 +147,7 @@
   }
 }
 
-@media (min-width: 1028px) {
+@media (min-width: $breakpoint-l) {
   .container {
     display: flex;
     justify-content: center;

@@ -1,6 +1,7 @@
 import styles from './Header.module.scss'
 import cn from 'classnames'
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import SectionContainer from '../SectionContainer/SectionContainer';
 
 let navItems = [
     { name: 'Work', isSubNav: true },
@@ -72,42 +73,46 @@ function Header() {
     }, [headerState]);
 
     return (
-        <header className={cn(styles.header, {
-            [styles.visible]: headerState === 'show',
-            [styles.hide]: headerState === 'hide',
-            [styles.animateSlideIn]: animateSlideIn,
-            })}
-        >
-            <div className={styles.container}>
-                <div className={styles.headerContainer}>
-                    <div className={styles.headerInner}>
-                        <h1 className={styles.title} >Samantha Albrecht</h1>
-                        <div className={styles.subNav}>
-                            <SubNav />
-                            <div className={styles.navOpen} onClick={navToggle}>
-                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
-                                    <polyline points="9 18 15 12 9 6"></polyline>
-                                </svg>
+        <header>
+            <SectionContainer section={'Header'}>
+                <div className={cn(styles.header, {
+                    [styles.visible]: headerState === 'show',
+                    [styles.hide]: headerState === 'hide',
+                    [styles.animateSlideIn]: animateSlideIn,
+                    })}
+                >
+                    <div className={styles.container}>
+                        <div className={styles.headerContainer}>
+                            <div className={styles.headerInner}>
+                                <h1 className={styles.title} >Samantha Albrecht</h1>
+                                <div className={styles.subNav}>
+                                    <SubNav />
+                                    <div className={styles.navOpen} onClick={navToggle}>
+                                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div className={cn(styles.fullNav, {
+                                    [styles.fullNavVisible]: showHeader,
+                                    })}
+                                >
+                                    <FullNav />
+                                    <a href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/" rel="noopener noreferrer nofollow" className={styles.secondaryButton}>Contact</a>
+                                    <div className={styles.navClose} onClick={navToggle}>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <Overlay show={showHeader} onClick={navToggle}/>
                             </div>
                         </div>
-                        <div className={cn(styles.fullNav, {
-                            [styles.fullNavVisible]: showHeader,
-                            })}
-                        >
-                            <FullNav />
-                            <a href="#" className={styles.secondaryButton}>Contact</a>
-                            <div className={styles.navClose} onClick={navToggle}>
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <Overlay show={showHeader} onClick={navToggle}/>
                     </div>
-                </div>
-            </div>
-        </header>    
+                </div>  
+            </SectionContainer>
+        </header>  
     )
 }
 export default Header
