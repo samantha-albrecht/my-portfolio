@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import About from '../components/homepage/About/About'
 import Hero from '../components/homepage/Hero/Hero'
 import Work from '../components/homepage/Work/Work'
 
@@ -12,11 +13,7 @@ function Home () {
 
         <Hero/>
         <Work/>
-
-        <Link href="/about">
-            <a>About</a>
-        </Link>
-
+        <About/>
     </>
     )
 }

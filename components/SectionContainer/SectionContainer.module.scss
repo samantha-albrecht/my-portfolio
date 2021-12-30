@@ -42,7 +42,7 @@
   border-right-color: transparent;
   border-top-color: transparent;
   border-bottom-color: transparent;
-  opacity: 0.6;
+  opacity: 0.4;
 
   &:nth-of-type(1),
   &:nth-of-type(2),
@@ -103,6 +103,22 @@
 
     .backgroundContainer {
       background-color: var(--md-card-color);
+    }
+  }
+
+  &About {
+    background-color: var(--dk-card-color);
+
+    .gridLayout {
+      grid-template-rows: 142px auto 48px;
+    }
+  }
+
+  &Footer {
+    background-color: var(--dk-card-color);
+
+    .gridLayout {
+      grid-template-rows: 16px auto 16px;
     }
   }
 }

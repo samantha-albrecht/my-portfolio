@@ -1,0 +1,15 @@
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  z-index: 3;
+}
+
+.contentInner {
+  grid-area: 1 / 1 / 2 / 5;
+  display: flex;
+  justify-content: space-between;
+  color: var(--dk-footer-color);
+  font-size: var(--font-size-xs);
+}
