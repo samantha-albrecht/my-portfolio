@@ -1,0 +1,62 @@
+@import "../../../design-tokens/scss-variables.scss";
+
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  position: relative;
+  z-index: 3;
+}
+
+.contentInnerTitle {
+  grid-area: 1 / 1 / 2 / 5;
+  padding: 100px 16px 0;
+}
+
+.caption {
+  @include caption();
+}
+
+.sectionTitle {
+  @include title-2xl($margin: 0 0 48px 0);
+}
+
+.processContainer {
+  padding: 16px 16px 100px;
+}
+
+.processDefine {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.processDesign {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.processBuild {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.processTest {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.processIcon {
+  color: var(--icon-color);
+  margin-left: -2px;
+}
+
+.processTitle {
+  @include title-l($margin: 16px 0 8px 0);
+}
+
+.processDescription {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.toolsList {
+  font-size: var(--font-size-s);
+}

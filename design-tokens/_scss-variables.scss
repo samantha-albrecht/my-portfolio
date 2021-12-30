@@ -42,35 +42,35 @@ $breakpoint-xl: 1280px;
   margin: $margin;
 }
 
-@mixin title-3xl($margin) {
+@mixin title-3xl($margin: 0) {
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-medium);
   line-height: 130%;
   margin: $margin;
 }
 
-@mixin title-2xl($margin) {
+@mixin title-2xl($margin: 0) {
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-book);
   line-height: 130%;
   margin: $margin;
 }
 
-@mixin title-xl($margin) {
+@mixin title-xl($margin: 0) {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
   line-height: 130%;
   margin: $margin;
 }
 
-@mixin title-l($margin) {
+@mixin title-l($margin: 0) {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-medium);
   line-height: 130%;
   margin: $margin;
 }
 
-@mixin title-m($margin) {
+@mixin title-m($margin: 0) {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-book);
   line-height: 130%;
@@ -79,13 +79,14 @@ $breakpoint-xl: 1280px;
 
 @mixin body() {
   font-family: var(--font-family);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-book);
   font-size: var(--font-size-ms);
   font-style: normal;
   line-height: 180%;
   letter-spacing: 0.03rem;
   background-color: var(--background-color);
   color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
 }
 
 @mixin nav() {

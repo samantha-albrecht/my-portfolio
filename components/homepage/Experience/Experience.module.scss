@@ -1,0 +1,66 @@
+@import "../../../design-tokens/scss-variables.scss";
+
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  z-index: 3;
+}
+
+.contentInner {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.titleContainer {
+  padding: 0 16px;
+}
+
+.caption {
+  @include caption();
+}
+
+.sectionTitle {
+  @include title-2xl($margin: 0 0 48px 0);
+}
+
+.mainContainer {
+  padding: 0 80px 0 40px;
+}
+
+.subTitleLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.subCaption {
+  @include caption-s();
+}
+
+.subTitle {
+  @include title-l();
+}
+
+.date {
+  @include caption-s();
+  color: var(--text-color);
+}
+
+.jobList {
+  list-style: disc;
+  list-style-position: inside;
+  margin: 8px 0 42px 24px;
+}
+
+.jobContainer {
+  margin-bottom: 72px;
+}
+
+.educationContainer {
+  margin: 142px 0 72px 0;
+
+  .subTitleLayout {
+    margin-bottom: 36px;
+  }
+}

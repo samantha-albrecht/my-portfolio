@@ -7,7 +7,7 @@ function About() {
         <section>
             <SectionContainer section={'About'}>
                 <div className={styles.contentContainer}>
-                    <div className={styles.contentInnerTitle}>
+                    <div className={styles.contentInner}>
                         <div className={styles.caption}>About</div>
                         <h2 className={styles.sectionTitle}>Who I am</h2>
                         <p className={styles.aboutBodyTitle}>I didn't choose web design, web design chose me.</p>

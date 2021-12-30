@@ -106,6 +106,12 @@
     }
   }
 
+  &Process {
+    .backgroundContainer {
+      background-color: var(--lt-card-color);
+    }
+  }
+
   &About {
     background-color: var(--dk-card-color);
 
