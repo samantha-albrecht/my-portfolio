@@ -12,9 +12,7 @@ function SectionContainer({ children, section }) {
                     <div className={styles.guide}></div>
                     <div className={styles.guide}></div>
                 </div>
-                <div className={styles.contentContainer}>
-                    {children}
-                </div>
+                {children}
             </div>
         </div>
     )

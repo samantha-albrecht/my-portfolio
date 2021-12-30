@@ -3,6 +3,7 @@
 .container {
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .gridLayout {
@@ -17,11 +18,13 @@
 .backgroundContainer {
   grid-area: 2 / 1 / 3 / 4;
   border-radius: var(--border-radius-lg);
+  z-index: 1;
 }
 
 .guidesContainer {
-  grid-area: 1 / 2 / 4 / 3;
+  grid-area: 1 / 2 / row-end / 3;
   display: grid;
+  z-index: 2;
 
   @media (min-width: $breakpoint-m) {
     grid-template-columns: repeat(2, 1fr);
@@ -65,15 +68,10 @@
   }
 }
 
-.contentContainer {
-  grid-area: 2 / 2 / 3 / 3;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .section {
   &Header {
     .gridLayout {
+      z-index: 10;
       grid-template-rows: 16px 106px 0;
 
       @media (min-width: $breakpoint-l) {
@@ -86,7 +84,7 @@
     background-color: var(--lt-card-color);
 
     .gridLayout {
-      grid-template-rows: 16px auto 16px;
+      grid-template-rows: 16px auto 74px;
     }
 
     @media (min-width: $breakpoint-l) {
@@ -95,6 +93,16 @@
       .backgroundContainer {
         background-color: var(--lt-card-color);
       }
+    }
+  }
+
+  &Work {
+    .gridLayout {
+      grid-template-rows: 48px auto auto 48px;
+    }
+
+    .backgroundContainer {
+      background-color: var(--md-card-color);
     }
   }
 }

@@ -10,3 +10,83 @@ $breakpoint-s: 640px;
 $breakpoint-m: 768px;
 $breakpoint-l: 1024px;
 $breakpoint-xl: 1280px;
+
+// Typography
+@mixin caption() {
+  font-family: var(--mono-font-family);
+  font-weight: var(--mono-font-weight-regular);
+  font-size: var(--font-size-ms);
+  line-height: 130%;
+  color: var(--caption-color);
+  margin-bottom: 4px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1.5px;
+    background-color: var(--caption-color);
+    top: 4px;
+    left: -16px;
+    height: 16px;
+    position: absolute;
+  }
+}
+
+@mixin caption-s($margin: 0 0 4px 0) {
+  font-family: var(--mono-font-family);
+  font-weight: var(--mono-font-weight-regular);
+  font-size: var(--font-size-s);
+  line-height: 130%;
+  color: var(--caption-color);
+  margin: $margin;
+}
+
+@mixin title-3xl($margin) {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin: $margin;
+}
+
+@mixin title-2xl($margin) {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-book);
+  line-height: 130%;
+  margin: $margin;
+}
+
+@mixin title-xl($margin) {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin: $margin;
+}
+
+@mixin title-l($margin) {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin: $margin;
+}
+
+@mixin title-m($margin) {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-book);
+  line-height: 130%;
+  margin: $margin;
+}
+
+@mixin body() {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-book);
+  font-size: var(--font-size-ms);
+  font-style: normal;
+  line-height: 170%;
+  letter-spacing: 0.03rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+@mixin nav() {
+}

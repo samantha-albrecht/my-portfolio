@@ -1,0 +1,115 @@
+@import "../../../design-tokens/scss-variables";
+
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  z-index: 3;
+}
+
+.contentInnerTitle {
+  grid-area: 1 / 1 / 2 / 5;
+  padding: 0 16px;
+}
+
+.caption {
+  @include caption();
+}
+
+.sectionTitle {
+  @include title-2xl($margin: 0 0 24px 0);
+}
+
+.contentInner {
+  grid-area: 1 / 1 / 2 / 5;
+  position: relative;
+}
+
+.placeholder {
+  background-color: var(--background-color);
+  opacity: 0.5;
+  width: 100%;
+  height: 500px;
+}
+
+.descriptionContainer {
+  grid-area: 3 / 2 / 4 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  z-index: 4;
+}
+
+.descriptionUpper {
+  grid-area: 1 / 2 / 2 / 5;
+  background-color: rgba(242, 246, 256, 0.9);
+  padding: 32px 40px;
+  margin-top: -80px;
+  position: relative;
+}
+
+.descriptionCaption {
+  @include caption-s();
+}
+
+.descriptionTitle {
+  @include title-xl($margin: 0 0 24px 0);
+}
+
+.descriptionBody {
+  padding: 0 62px 0 48px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 1px;
+    left: 0;
+    top: 12px;
+    background-color: var(--description-line-color);
+  }
+}
+
+.viewPage {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;
+
+  &Link {
+    color: var(--description-line-color);
+    padding: 5px 8px 8px;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--page-view-background-color-hover);
+    }
+  }
+}
+
+.descriptionLower {
+  padding: 24px 40px;
+}
+
+.descriptionOrganization {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.descriptionWork {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.descriptionLanguages {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.descriptionSubTitle {
+  @include caption-s($margin: 0 0 8px 0);
+}
+
+.descriptionListItem {
+  font-size: var(--font-size-s);
+  margin: 4px 0;
+}

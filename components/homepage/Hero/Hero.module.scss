@@ -1,25 +1,49 @@
 @import "../../../design-tokens/scss-variables.scss";
 
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  z-index: 3;
+}
+
 .contentInner {
   grid-area: 1 / 1 / 2 / 5;
-  padding: 148px 0;
+  padding: 142px 16px 242px;
 
   @media (min-width: $breakpoint-l) {
     grid-area: 1 / 2 / 2 / 5;
   }
 }
 
+.squareLarge {
+  position: absolute;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: end;
+  top: 60px;
+  height: 490px;
+  width: 490px;
+  background-color: var(--dk-square-color);
+  opacity: 0.4;
+}
+
+.squareSmall {
+  position: absolute;
+  grid-area: 1 / 4 / 2 / 5;
+  justify-self: end;
+  right: -180px;
+  bottom: -72px;
+  height: 180px;
+  width: 180px;
+  background-color: var(--lt-square-color);
+  opacity: 0.4;
+}
+
 .caption {
-  font-family: var(--mono-font-family);
-  font-weight: var(--mono-font-weight-regular);
-  font-size: var(--font-size-ms);
-  color: var(--caption-color);
-  margin-bottom: 4px;
+  @include caption();
 }
 
 .title {
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-medium);
-  line-height: 130%;
-  margin-bottom: 24px;
+  @include title-3xl($margin: 0 0 24px 0);
 }
