@@ -140,6 +140,18 @@
     }
   }
 
+  &Books {
+    background-color: var(--lt-card-color);
+
+    @media (min-width: $breakpoint-l) {
+      background-color: transparent;
+
+      .backgroundContainer {
+        background-color: var(--lt-card-color);
+      }
+    }
+  }
+
   &About {
     background-color: var(--dk-card-color);
 

@@ -99,7 +99,7 @@ function Header() {
                                 >
                                     <FullNav />
                                     <a href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/" rel="noopener noreferrer nofollow" className={styles.secondaryButton}>Contact</a>
-                                    <button className={styles.navClose} onClick={navToggle}>
+                                    <button className={styles.navClose} onClick={navToggle} title="Close navigation">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
                                             <path fill="none" d="M0 0h24v24H0z"></path>
                                             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
