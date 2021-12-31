@@ -3,15 +3,14 @@
 .contentContainer {
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
   position: relative;
   z-index: 3;
 }
 
 .contentInnerTitle {
-  grid-area: 1 / 1 / 2 / 5;
-  padding: 100px 16px 0;
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 16px 16px 0;
 }
 
 .caption {
@@ -23,23 +22,7 @@
 }
 
 .processContainer {
-  padding: 16px 16px 100px;
-}
-
-.processDefine {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.processDesign {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.processBuild {
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-.processTest {
-  grid-area: 2 / 4 / 3 / 5;
+  padding: 16px 16px 36px;
 }
 
 .processIcon {
@@ -59,4 +42,28 @@
 
 .toolsList {
   font-size: var(--font-size-s);
+}
+
+@media (min-width: $breakpoint-m) {
+  .contentContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contentInnerTitle {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .contentContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contentInnerTitle {
+    grid-area: 1 / 1 / 2 / 5;
+    padding: 100px 16px 0;
+  }
+
+  .processContainer {
+    padding: 16px 16px 100px;
+  }
 }

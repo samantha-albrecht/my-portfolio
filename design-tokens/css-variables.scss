@@ -7,7 +7,8 @@ html {
   --text-color: var(--dk-gray-800);
   --nav-color: var(--indigo-600);
   --caption-color: var(--indigo-600);
-  --link-color: var(--indigo-500);
+  --link-color: var(--indigo-600);
+  --link-color-hover: var(--indigo-800);
   --primary-button-background-color: var(--indigo-500);
   --primary-button-background-color-hover: var(--indigo-700);
   --secondary-button-color: var(--indigo-600);
@@ -29,11 +30,12 @@ html {
   --dk-link-color: var(--indigo-500);
   --dk-primary-button-background-color: var(--indigo-500);
   --dk-primary-button-background-color-hover: var(--indigo-700);
-  --dk-secondary-button-color: var(--indigo-600);
+  --dk-secondary-button-color: var(--indigo-400);
   --dk-secondary-button-background-color: var(--transparent);
-  --dk-secondary-button-border-color: var(--indigo-500);
-  --dk-secondary-button-background-color-hover: var(--indigo-200);
+  --dk-secondary-button-border-color: var(--indigo-400);
+  --dk-secondary-button-background-color-hover: var(--indigo-800);
   --dk-description-line-color: var(--indigo-400);
+  --dk-guide-color: var(--indigo-400);
 
   --lt-card-color: var(--indigo-100);
   --md-card-color: var(--indigo-500);

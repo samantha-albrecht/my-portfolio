@@ -3,7 +3,7 @@ import styles from "./Experience.module.scss";
 
 function Experience() {
     return (
-        <section>
+        <section id="experience">
             <SectionContainer>
                 <div className={styles.contentContainer}>
                     <div className={styles.contentInner}>

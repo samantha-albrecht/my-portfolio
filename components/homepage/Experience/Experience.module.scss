@@ -2,8 +2,6 @@
 
 .contentContainer {
   grid-area: 2 / 2 / 3 / 3;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   position: relative;
   z-index: 3;
 }
@@ -13,7 +11,7 @@
 }
 
 .titleContainer {
-  padding: 0 16px;
+  padding: 16px 16px 0;
 }
 
 .caption {
@@ -25,13 +23,7 @@
 }
 
 .mainContainer {
-  padding: 0 80px 0 40px;
-}
-
-.subTitleLayout {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  padding: 0 16px;
 }
 
 .subCaption {
@@ -39,7 +31,7 @@
 }
 
 .subTitle {
-  @include title-l();
+  @include title-l($margin: 0 0 8px 0);
 }
 
 .date {
@@ -50,17 +42,51 @@
 .jobList {
   list-style: disc;
   list-style-position: inside;
-  margin: 8px 0 42px 24px;
+  margin: 8px 0 36px 16px;
 }
 
 .jobContainer {
-  margin-bottom: 72px;
+  margin-bottom: 64px;
 }
 
-.educationContainer {
-  margin: 142px 0 72px 0;
+.educationContainer .subTitleLayout {
+  margin-bottom: 36px;
+}
 
+@media (min-width: $breakpoint-m) {
   .subTitleLayout {
-    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .subTitle {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .contentContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .titleContainer {
+    padding: 0 16px;
+  }
+
+  .mainContainer {
+    padding: 0 80px 0 40px;
+  }
+
+  .jobList {
+    margin: 8px 0 42px 24px;
+  }
+
+  .jobContainer {
+    margin-bottom: 72px;
+  }
+
+  .educationContainer {
+    margin: 142px 0 72px 0;
   }
 }

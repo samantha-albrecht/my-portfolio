@@ -18,7 +18,7 @@ $breakpoint-xl: 1280px;
   font-size: var(--font-size-ms);
   line-height: 130%;
   color: $color;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   position: relative;
 
   &::before {
@@ -36,45 +36,69 @@ $breakpoint-xl: 1280px;
 @mixin caption-s($margin: 0 0 4px 0) {
   font-family: var(--mono-font-family);
   font-weight: var(--mono-font-weight-regular);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
   line-height: 130%;
   color: var(--caption-color);
   margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-s);
+  }
 }
 
 @mixin title-3xl($margin: 0) {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-medium);
-  line-height: 130%;
+  line-height: 120%;
   margin: $margin;
+
+  @media (min-width: $breakpoint-l) {
+    font-size: var(--font-size-3xl);
+  }
 }
 
 @mixin title-2xl($margin: 0) {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-book);
   line-height: 130%;
   margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-2xl);
+  }
 }
 
 @mixin title-xl($margin: 0) {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-medium);
-  line-height: 130%;
-  margin: $margin;
-}
-
-@mixin title-l($margin: 0) {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-medium);
   line-height: 130%;
   margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@mixin title-l($margin: 0) {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-l);
+  }
 }
 
 @mixin title-m($margin: 0) {
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   font-weight: var(--font-weight-book);
   line-height: 130%;
   margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-m);
+  }
 }
 
 @mixin body() {

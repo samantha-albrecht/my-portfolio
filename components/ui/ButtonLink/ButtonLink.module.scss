@@ -17,14 +17,24 @@
   &:hover {
     background-color: var(--primary-button-background-color-hover);
   }
+}
 
-  &.buttonOutline {
-    color: var(--secondary-button-color);
-    background-color: var(--secondary-button-background-color);
-    border: 1px solid var(--secondary-button-border-color);
+.buttonOutlineLight {
+  color: var(--secondary-button-color);
+  background-color: var(--secondary-button-background-color);
+  border: 1px solid var(--secondary-button-border-color);
 
-    &:hover {
-      background-color: var(--secondary-button-background-color-hover);
-    }
+  &:hover {
+    background-color: var(--secondary-button-background-color-hover);
+  }
+}
+
+.buttonOutlineDark {
+  color: var(--dk-secondary-button-color);
+  background-color: var(--dk-secondary-button-background-color);
+  border: 1px solid var(--dk-secondary-button-border-color);
+
+  &:hover {
+    background-color: var(--dk-secondary-button-background-color-hover);
   }
 }

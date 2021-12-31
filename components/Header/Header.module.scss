@@ -59,7 +59,24 @@
 }
 
 .navItem {
-  padding-right: 24px;
+  margin-right: 24px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color: var(--nav-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .subNav {
@@ -69,6 +86,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navOpen,
+.navClose {
+  border: none;
 }
 
 .navOpen {
@@ -134,7 +156,7 @@
 
     .navItem {
       font-size: var(--font-size-m);
-      padding: 8px 0;
+      margin: 8px 0;
       width: fit-content;
     }
 
@@ -207,7 +229,7 @@
   }
 
   .navItem {
-    padding: 8px 12px;
+    margin: 8px 36px 8px 12px;
   }
 
   .navClose {

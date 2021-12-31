@@ -10,10 +10,20 @@
 
 .contentInner {
   grid-area: 1 / 1 / 2 / 5;
-  padding: 142px 16px 242px;
+  padding: 48px 16px;
 
   @media (min-width: $breakpoint-l) {
     grid-area: 1 / 2 / 2 / 5;
+    padding: 142px 16px 242px;
+  }
+}
+
+.squareLarge,
+.squareSmall {
+  display: none;
+
+  @media (min-width: $breakpoint-l) {
+    display: block;
   }
 }
 

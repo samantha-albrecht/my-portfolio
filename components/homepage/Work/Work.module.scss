@@ -36,16 +36,13 @@
 .descriptionContainer {
   grid-area: 3 / 2 / 4 / 3;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
   z-index: 4;
 }
 
 .descriptionUpper {
-  grid-area: 1 / 2 / 2 / 5;
-  background-color: rgba(242, 246, 256, 0.9);
-  padding: 32px 40px;
-  margin-top: -80px;
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 32px 16px;
   position: relative;
 }
 
@@ -58,13 +55,13 @@
 }
 
 .descriptionBody {
-  padding: 0 62px 0 48px;
+  padding: 0 0 0 28px;
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
-    width: 40px;
+    width: 16px;
     height: 1px;
     left: 0;
     top: 12px;
@@ -74,8 +71,8 @@
 
 .viewPage {
   position: absolute;
-  bottom: 28px;
-  right: 28px;
+  bottom: 0px;
+  right: 16px;
 
   &Link {
     color: var(--text-color);
@@ -91,19 +88,7 @@
 }
 
 .descriptionLower {
-  padding: 24px 40px;
-}
-
-.descriptionOrganization {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.descriptionWork {
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-.descriptionLanguages {
-  grid-area: 2 / 4 / 3 / 5;
+  padding: 24px 16px 0;
 }
 
 .descriptionSubTitle {
@@ -113,4 +98,62 @@
 .descriptionListItem {
   font-size: var(--font-size-s);
   margin: 4px 0;
+}
+
+@media (min-width: $breakpoint-m) {
+  .descriptionContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .descriptionUpper {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .descriptionContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .descriptionUpper {
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: rgba(242, 246, 256, 0.9);
+    padding: 32px 40px;
+    margin-top: -80px;
+  }
+
+  .descriptionBody {
+    padding: 0 62px 0 48px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 1px;
+      left: 0;
+      top: 12px;
+      background-color: var(--description-line-color);
+    }
+  }
+
+  .viewPage {
+    bottom: 28px;
+    right: 28px;
+  }
+
+  .descriptionLower {
+    padding: 24px 40px;
+  }
+
+  .descriptionOrganization {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .descriptionWork {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .descriptionLanguages {
+    grid-area: 2 / 4 / 3 / 5;
+  }
 }

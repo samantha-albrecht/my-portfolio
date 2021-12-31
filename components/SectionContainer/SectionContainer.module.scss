@@ -72,7 +72,7 @@
   &Header {
     .gridLayout {
       z-index: 10;
-      grid-template-rows: 16px 106px 0;
+      grid-template-rows: 16px 106px 16px;
 
       @media (min-width: $breakpoint-l) {
         grid-template-rows: 16px 70px 0;
@@ -84,8 +84,52 @@
     background-color: var(--lt-card-color);
 
     .gridLayout {
-      grid-template-rows: 16px auto 74px;
+      grid-template-rows: 36px auto 36px;
     }
+
+    @media (min-width: $breakpoint-l) {
+      background-color: transparent;
+
+      .gridLayout {
+        grid-template-rows: 16px auto 74px;
+      }
+
+      .backgroundContainer {
+        background-color: var(--lt-card-color);
+      }
+    }
+  }
+
+  &Work {
+    .gridLayout {
+      grid-template-rows: 16px auto auto 48px;
+    }
+
+    .backgroundContainer {
+      background-color: var(--md-card-color);
+    }
+
+    @media (min-width: $breakpoint-l) {
+      .gridLayout {
+        grid-template-rows: 48px auto auto 48px;
+      }
+    }
+
+    &Title {
+      .gridLayout {
+        grid-template-rows: 64px auto 16px;
+      }
+
+      @media (min-width: $breakpoint-l) {
+        .gridLayout {
+          grid-template-rows: 48px auto 48px;
+        }
+      }
+    }
+  }
+
+  &Process {
+    background-color: var(--lt-card-color);
 
     @media (min-width: $breakpoint-l) {
       background-color: transparent;
@@ -96,27 +140,17 @@
     }
   }
 
-  &Work {
-    .gridLayout {
-      grid-template-rows: 48px auto auto 48px;
-    }
-
-    .backgroundContainer {
-      background-color: var(--md-card-color);
-    }
-  }
-
-  &Process {
-    .backgroundContainer {
-      background-color: var(--lt-card-color);
-    }
-  }
-
   &About {
     background-color: var(--dk-card-color);
 
     .gridLayout {
-      grid-template-rows: 142px auto 48px;
+      grid-template-rows: 48px auto 48px;
+    }
+
+    @media (min-width: $breakpoint-l) {
+      .gridLayout {
+        grid-template-rows: 142px auto 48px;
+      }
     }
   }
 
@@ -125,6 +159,12 @@
 
     .gridLayout {
       grid-template-rows: 16px auto 16px;
+    }
+
+    @media (min-width: $breakpoint-l) {
+      .gridLayout {
+        grid-template-rows: 24px auto 24px;
+      }
     }
   }
 }

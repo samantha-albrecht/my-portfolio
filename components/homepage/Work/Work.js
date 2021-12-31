@@ -81,8 +81,8 @@ function Project() {
 
 function Work() {
     return (
-        <section>
-            <SectionContainer>
+        <section id="work">
+            <SectionContainer section={'WorkTitle'}>
                 <div className={styles.contentContainer}>
                     <div className={styles.contentInnerTitle}>
                         <div className={styles.caption}>Work</div>

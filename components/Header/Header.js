@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 import SectionContainer from '../SectionContainer/SectionContainer';
 
 let navItems = [
-    { name: 'Work', isSubNav: true },
-    { name: 'Process', isSubNav: true },
-    { name: 'Experience', isSubNav: true },
-    { name: 'Books', isSubNav: false },
-    { name: 'About', isSubNav: false },
+    { name: 'Work', id: 'work', isSubNav: true },
+    { name: 'Process', id: 'process', isSubNav: true },
+    { name: 'Experience', id: 'experience', isSubNav: true },
+    { name: 'Books', id: 'books', isSubNav: false },
+    { name: 'About', id: 'about', isSubNav: false },
 ];
 
 function SubNav() {  
@@ -17,7 +17,7 @@ function SubNav() {
             <ul className={styles.navList}>
                 {navItems
                 .filter( navItem => navItem.isSubNav )
-                .map( navItem => <li className={styles.navItem}>{navItem.name}</li> )
+                .map( navItem => <li className={styles.navItem}><a href={`#${navItem.id}`} title={`Jump to ${navItem.id} section`}>{navItem.name}</a></li> )
                 }
             </ul>
         </nav>
@@ -28,7 +28,7 @@ function FullNav() {
     return (
         <nav className={styles.nav}>
             <ul className={styles.navList}>
-                {navItems.map( navItem => <li className={styles.navItem}>{navItem.name}</li> )}
+                {navItems.map( navItem => <li className={styles.navItem}><a href={`#${navItem.id}`} title={`Jump to ${navItem.id} section`}>{navItem.name}</a></li> )}
             </ul>
         </nav>
     )
@@ -87,11 +87,11 @@ function Header() {
                                 <h1 className={styles.title} >Samantha Albrecht</h1>
                                 <div className={styles.subNav}>
                                     <SubNav />
-                                    <div className={styles.navOpen} onClick={navToggle}>
+                                    <button className={styles.navOpen} onClick={navToggle} title="Open navigation">
                                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
                                             <polyline points="9 18 15 12 9 6"></polyline>
                                         </svg>
-                                    </div>
+                                    </button>
                                 </div>
                                 <div className={cn(styles.fullNav, {
                                     [styles.fullNavVisible]: showHeader,
@@ -99,12 +99,12 @@ function Header() {
                                 >
                                     <FullNav />
                                     <a href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/" rel="noopener noreferrer nofollow" className={styles.secondaryButton}>Contact</a>
-                                    <div className={styles.navClose} onClick={navToggle}>
+                                    <button className={styles.navClose} onClick={navToggle}>
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
                                             <path fill="none" d="M0 0h24v24H0z"></path>
                                             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
                                         </svg>
-                                    </div>
+                                    </button>
                                 </div>
                                 <Overlay show={showHeader} onClick={navToggle}/>
                             </div>

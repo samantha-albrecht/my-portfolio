@@ -2,15 +2,12 @@
 
 .contentContainer {
   grid-area: 2 / 2 / 3 / 3;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   position: relative;
   z-index: 3;
 }
 
 .contentInner {
-  grid-area: 1 / 1 / 2 / 3;
-  padding: 0 16px;
+  padding: 16px 16px;
 }
 
 .caption {
@@ -23,7 +20,7 @@
 }
 
 .aboutBodyTitle {
-  padding-left: 48px;
+  padding-left: 28px;
   margin: 0 0 20px;
   position: relative;
   color: var(--dk-text-color);
@@ -31,7 +28,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: 40px;
+    width: 16px;
     height: 1px;
     left: 0;
     top: 12px;
@@ -43,4 +40,24 @@
   color: var(--dk-text-color);
   margin: 0 0 20px;
   line-height: 2rem;
+}
+
+@media (min-width: $breakpoint-l) {
+  .contentContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contentInner {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 0 16px;
+  }
+
+  .aboutBodyTitle {
+    padding-left: 48px;
+
+    &::before {
+      width: 40px;
+    }
+  }
 }

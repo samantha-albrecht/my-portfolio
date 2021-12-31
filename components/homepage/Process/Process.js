@@ -4,7 +4,7 @@ import styles from "./Process.module.scss";
 
 function Process() {
     return (
-        <section>
+        <section  id="process">
             <SectionContainer section={'Process'}>
                 <div className={styles.contentContainer}>
                     <div className={styles.contentInnerTitle}>
