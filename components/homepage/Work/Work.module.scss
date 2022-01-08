@@ -55,18 +55,7 @@
 }
 
 .descriptionBody {
-  padding: 0 0 0 28px;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 1px;
-    left: 0;
-    top: 12px;
-    background-color: var(--description-line-color);
-  }
+  margin: 0 0 16px;
 }
 
 .viewPage {
@@ -89,6 +78,23 @@
 
 .descriptionLower {
   padding: 24px 16px 0;
+}
+
+.descriptionBodyTitle {
+  @include body();
+  padding-left: 28px;
+  margin: 0 0 16px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1px;
+    left: 0;
+    top: 12px;
+    background-color: var(--dk-description-line-color);
+  }
 }
 
 .descriptionSubTitle {
@@ -122,17 +128,11 @@
     margin-top: -80px;
   }
 
-  .descriptionBody {
-    padding: 0 62px 0 48px;
+  .descriptionBodyTitle {
+    padding-left: 48px;
 
     &::before {
-      position: absolute;
-      content: "";
       width: 40px;
-      height: 1px;
-      left: 0;
-      top: 12px;
-      background-color: var(--description-line-color);
     }
   }
 

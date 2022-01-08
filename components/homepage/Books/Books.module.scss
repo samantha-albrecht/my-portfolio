@@ -29,11 +29,10 @@
   padding: 16px;
 }
 
-.placeholder {
+.bookCoverImage {
+  position: relative;
   width: 145px;
   height: 220px;
-  background-color: var(--dk-gray-200);
-  border-radius: var(--border-radius-sm);
 }
 
 .bookBodyBold {

@@ -7,23 +7,23 @@ function Project() {
         { 
             descriptionCaption: 'Actionable Marketing Institute by CoSchedule',
             descriptionTitle: 'Online Learning Course Catalog',
-            descriptionSubTitle: 'One line about the project goes here.',
+            descriptionBodyTitle: 'One line about the project goes here.',
             descriptionBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             url: 'https://coschedule.com/actionable-marketing-institute/ami-pro',
             urlTitle: 'Go to Online Learning Course Catalog Page',
             descriptionOrganization: 'CoSchedule',
-            descriptionWork: [ 'Design', 'Font-end development' ],
+            descriptionWork: [ 'Design', 'Front-end development' ],
             descriptionLanguages: [ 'WordPress', 'PHP', 'HTML', 'SCSS','jQuery' ],
         },
         { 
             descriptionCaption: 'Headline Studio by CoSchedule',
             descriptionTitle: 'Product Landing Page',
-            descriptionSubTitle: 'One line about the project goes here.',
+            descriptionBodyTitle: 'One line about the project goes here.',
             descriptionBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             url: 'https://coschedule.com/headline-studio',
             urlTitle: 'Go to Product Landing Page',
             descriptionOrganization: 'CoSchedule',
-            descriptionWork: [ 'Design', 'Font-end development' ],
+            descriptionWork: [ 'Design', 'Front-end development' ],
             descriptionLanguages: [ 'HTML', 'SCSS','jQuery' ],
         },
     ]
@@ -42,7 +42,7 @@ function Project() {
                         <div className={styles.descriptionUpper}>
                             <div className={styles.descriptionCaption}>{project.descriptionCaption}</div>
                             <h3 className={styles.descriptionTitle}>{project.descriptionTitle}</h3>
-                            <h4 className={styles.descriptionSubTitle}>{project.descriptionSubTitle}</h4>
+                            <h4 className={styles.descriptionBodyTitle}>{project.descriptionBodyTitle}</h4>
                             <p className={styles.descriptionBody}>{project.descriptionBody}</p>
                             <div className={styles.viewPage}>
                                 <a href={project.url} title={project.urlTitle} rel="noreferer" className={styles.viewPageLink}>
