@@ -101,6 +101,24 @@ $breakpoint-xl: 1280px;
   }
 }
 
+@mixin title-s($margin: 0) {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-book);
+  line-height: 130%;
+  margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-s);
+  }
+}
+
+@mixin title-xs($margin: 0) {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin: $margin;
+}
+
 @mixin body() {
   font-family: var(--font-family);
   font-weight: var(--font-weight-book);

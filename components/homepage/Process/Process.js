@@ -9,7 +9,8 @@ function Process() {
                 <div className={styles.contentContainer}>
                     <div className={styles.contentInnerTitle}>
                         <div className={styles.caption}>Process</div>
-                        <h2 className={styles.sectionTitle}>Project Lifecycle</h2>
+                        <h2 className={styles.sectionTitle}>End-to-End Design</h2>
+                        <p className={styles.sectionBody}>As a designer I’m involved in all parts of the project lifecycle:</p>
                     </div>
                     <div className={cn(styles.processContainer, styles.processDefine)}>
                         {/* <svg className={styles.processIcon} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="28px" width="28px" xmlns="http://www.w3.org/2000/svg">
@@ -19,8 +20,9 @@ function Process() {
 
                         <svg className={styles.processIcon} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="28px" width="28px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-7 7H3v4c0 1.1.9 2 2 2h4v-2H5v-4zM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4z"></path></svg>
 
-                        <h3 className={styles.processTitle}>Define</h3>
-                        <p className={styles.processDescription}>Arcu vitae elementum curabitur vitae. Laculis urna id volutpat lacus laoreet non curabitur.</p>
+                        <h3 className={styles.processTitle}>Observe &amp; Define</h3>
+                        <p className={styles.processDescription}>Understand how customers are using the product. And identify opportunities for&nbsp;improvement.</p>
+                        <p className={styles.toolsListTitle}>Documentation tools I've used:</p>
                         <ul className={styles.toolsList}>
                             <li className={styles.toolsListItem}>Google Docs</li>
                             <li className={styles.toolsListItem}>InVision Freehand</li>
@@ -37,11 +39,13 @@ function Process() {
                             <circle cx="17.5" cy="11.5" r="1.5"></circle>
                         </svg>
 
-                        <h3 className={styles.processTitle}>Design</h3>
-                        <p className={styles.processDescription}>Arcu vitae elementum curabitur vitae. Laculis urna id volutpat lacus laoreet non curabitur.</p>
+                        <h3 className={styles.processTitle}>Ideate &amp; Prototype</h3>
+                        <p className={styles.processDescription}>Explore possible solutions to challenge assumptions with wireframes and design&nbsp;mockups.</p>
+                        <p className={styles.toolsListTitle}>Design programs I've used:</p>
                         <ul className={styles.toolsList}>
                             <li className={styles.toolsListItem}>Balsamiq</li>
                             <li className={styles.toolsListItem}>Sketch</li>
+                            <li className={styles.toolsListItem}>Adobe Illustrator</li>
                             <li className={styles.toolsListItem}>And more</li>
                         </ul>
                     </div>
@@ -55,13 +59,14 @@ function Process() {
 
                         {/* <svg className={styles.processIcon} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="28px" width="28px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg> */}
 
-                        <h3 className={styles.processTitle}>Build</h3>
-                        <p className={styles.processDescription}>Arcu vitae elementum curabitur vitae. Laculis urna id volutpat lacus laoreet non curabitur.</p>
+                        <h3 className={styles.processTitle}>Build &amp; Launch</h3>
+                        <p className={styles.processDescription}>Develop a minimum viable product to get in the hands of&nbsp;customers.</p>
+                        <p className={styles.toolsListTitle}>Coding languages I've used:</p>
                         <ul className={styles.toolsList}>
                             <li className={styles.toolsListItem}>HTML</li>
-                            <li className={styles.toolsListItem}>SASS/LESS</li>
-                            <li className={styles.toolsListItem}>WordPress</li>
-                            <li className={styles.toolsListItem}>React (learning)</li>
+                            <li className={styles.toolsListItem}>CSS (SASS)</li>
+                            <li className={styles.toolsListItem}>jQuery</li>
+                            <li className={styles.toolsListItem}>React (currently learning)</li>
                             <li className={styles.toolsListItem}>And more</li>
                         </ul>
                     </div>
@@ -72,13 +77,14 @@ function Process() {
                             <path d="M7 12h2v5H7zM15 7h2v10h-2zM11 14h2v3h-2zM11 10h2v2h-2z"></path>
                         </svg>
 
-                        <h3 className={styles.processTitle}>Monitor &amp; Test</h3>
-                        <p className={styles.processDescription}>Arcu vitae elementum curabitur vitae. Laculis urna id volutpat lacus laoreet non curabitur.</p>
+                        <h3 className={styles.processTitle}>Test &amp; Refine</h3>
+                        <p className={styles.processDescription}>Gain insight and make improvements based on analytics and real user&nbsp;interactions.</p>
+                        <p className={styles.toolsListTitle}>Tracking software I've used:</p>
                         <ul className={styles.toolsList}>
                             <li className={styles.toolsListItem}>Google Analytics</li>
                             <li className={styles.toolsListItem}>Google Search Console</li>
                             <li className={styles.toolsListItem}>VWO</li>
-                            <li className={styles.toolsListItem}>ContentKing</li>
+                            <li className={styles.toolsListItem}>Hotjar</li>
                             <li className={styles.toolsListItem}>And more</li>
                         </ul>
                     </div>

@@ -87,7 +87,7 @@ function Books() {
                     <div className={styles.contentInnerTitle}>
                         <div className={styles.caption}>Books</div>
                         <h2 className={styles.sectionTitle}>What I'm reading</h2>
-                        <p className={styles.bookBody}>I haven’t always been an avid reader, but in the last two years, reading has changed my life. Now, I can’t put a book down! It’s how I start my day and end my day. I read because I crave new thoughts, ideas, and perspectives that inspire, teach, and challenge me.</p>
+                        <p className={styles.bookBody}>I haven’t always been an avid reader, but in the last two years, reading has changed my life. I read because I crave new thoughts, ideas, and perspectives that inspire, teach, and challenge me.</p>
                         <p className={styles.bookBodyBold}>Here are a few of my favorites:</p>
                     </div>
                     <BooksContent/>

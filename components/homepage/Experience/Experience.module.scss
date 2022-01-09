@@ -58,6 +58,7 @@
 }
 
 .companyLogo {
+  display: none;
   width: 48px;
   height: 48px;
   top: -20px;
@@ -103,5 +104,9 @@
 
   .educationContainer {
     margin: 142px 0 72px 0;
+  }
+
+  .companyLogo {
+    display: block;
   }
 }
