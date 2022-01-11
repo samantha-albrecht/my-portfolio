@@ -18,7 +18,10 @@
 }
 
 .sectionTitle {
-  @include title-2xl($margin: 0 0 48px 0);
+  @include title-2xl($margin: 0 0 24px 0);
+}
+.sectionBody {
+  margin-bottom: 32px;
 }
 
 .processContainer {
@@ -38,6 +41,10 @@
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 16px;
   margin-bottom: 16px;
+}
+
+.toolsListTitle {
+  @include title-xs($margin: 0 0 8px 0);
 }
 
 .toolsList {

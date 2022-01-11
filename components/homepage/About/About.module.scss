@@ -44,6 +44,10 @@
   color: var(--dk-text-color);
   margin: 0 0 16px;
   line-height: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 36px;
+  }
 }
 
 .image {
