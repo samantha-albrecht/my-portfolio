@@ -51,18 +51,6 @@
   @include title-xl($margin: 0 0 24px 0);
 }
 
-.descriptionLink {
-  @include text-link();
-  padding: 4px 8px;
-  border-radius: var(--border-radius-sm);
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    cursor: pointer;
-    background-color: var(--page-view-background-color-hover);
-  }
-}
-
 .viewPage {
   position: absolute;
   bottom: 0px;
@@ -88,7 +76,6 @@
 .descriptionBodyTitle {
   @include body();
   padding-left: 28px;
-  margin: 0 0 16px;
   position: relative;
 
   &::before {
@@ -99,6 +86,18 @@
     left: 0;
     top: 12px;
     background-color: var(--description-line-color);
+  }
+}
+
+.descriptionLink {
+  @include text-link();
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--page-view-background-color-hover);
   }
 }
 

@@ -63,7 +63,7 @@ function Project() {
                                 </a>
                             </div>
                         </div>
-                        <div className={cn(styles.descriptionLower, styles.descriptionOrganization)}>
+                        {/* <div className={cn(styles.descriptionLower, styles.descriptionOrganization)}>
                             <h4 className={styles.descriptionSubTitle}>Organization</h4>
                             <ul className={styles.descriptionList}>
                                 <li className={styles.descriptionListItem}>{project.descriptionOrganization}</li>
@@ -80,7 +80,7 @@ function Project() {
                             <ul className={styles.descriptionList}>
                                 {project.descriptionLanguages.map( descriptionLanguages => <li className={styles.descriptionListItem}>{descriptionLanguages}</li> )}
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </SectionContainer>
             )
