@@ -138,3 +138,14 @@ $breakpoint-xl: 1280px;
   color: var(--nav-color);
   line-height: 130%;
 }
+
+@mixin text-link() {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-book);
+  font-size: var(--font-size-ms);
+  font-style: normal;
+  line-height: 180%;
+  letter-spacing: 0.03rem;
+  color: var(--link-color);
+  -webkit-font-smoothing: antialiased;
+}

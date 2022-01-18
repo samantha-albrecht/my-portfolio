@@ -26,11 +26,8 @@
   position: relative;
 }
 
-.placeholder {
-  background-color: var(--background-color);
-  opacity: 0.5;
-  width: 100%;
-  height: 500px;
+.imageContainer {
+  display: block;
 }
 
 .descriptionContainer {
@@ -54,8 +51,16 @@
   @include title-xl($margin: 0 0 24px 0);
 }
 
-.descriptionBody {
-  margin: 0 0 16px;
+.descriptionLink {
+  @include text-link();
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--page-view-background-color-hover);
+  }
 }
 
 .viewPage {

@@ -1,27 +1,30 @@
 import cn from "classnames";
 import SectionContainer from "../../SectionContainer/SectionContainer";
 import styles from "./Work.module.scss"
+import Image from "next/image";
 
 function Project() {
     const projects =[
-        { 
-            descriptionCaption: 'Actionable Marketing Institute by CoSchedule',
+        {
+            imageSrc: '/img/work/project-screenshots-b-ami.png',
+            imageAlt: 'Actionable Marketing Institute by CoSchedule', 
+            descriptionCaption: 'Actionable Marketing Institute powered by CoSchedule',
             descriptionTitle: 'Online Learning Course Catalog',
-            descriptionBodyTitle: 'One line about the project goes here.',
-            descriptionBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            descriptionBodyTitle: 'Created engaging, user friendly web pages to refresh & renew the AMI product line and increase conversions.',
             url: 'https://coschedule.com/actionable-marketing-institute/ami-pro',
-            urlTitle: 'Go to Online Learning Course Catalog Page',
+            urlTitle: 'Go to the Actionable Marketing Institute',
             descriptionOrganization: 'CoSchedule',
             descriptionWork: [ 'Design', 'Front-end development' ],
             descriptionLanguages: [ 'WordPress', 'PHP', 'HTML', 'SCSS','jQuery' ],
         },
         { 
+            imageSrc: '/img/work/project-screenshots-b-hs.png',
+            imageAlt: 'Actionable Marketing Institute by CoSchedule',
             descriptionCaption: 'Headline Studio by CoSchedule',
-            descriptionTitle: 'Product Landing Page',
-            descriptionBodyTitle: 'One line about the project goes here.',
-            descriptionBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            descriptionTitle: 'New Product Squeeze Page',
+            descriptionBodyTitle: 'Built a high converting product page for the new Headline Studio app using cross-team collaboration, research, and refinement.',
             url: 'https://coschedule.com/headline-studio',
-            urlTitle: 'Go to Product Landing Page',
+            urlTitle: 'Go to Headline Studio',
             descriptionOrganization: 'CoSchedule',
             descriptionWork: [ 'Design', 'Front-end development' ],
             descriptionLanguages: [ 'HTML', 'SCSS','jQuery' ],
@@ -35,15 +38,22 @@ function Project() {
                 <SectionContainer section={'Work'} key={index}>
                     <div className={styles.contentContainer}>
                         <div className={styles.contentInner}>
-                            <div className={styles.placeholder}></div>
+                            <div className={styles.imageContainer}>
+                                <Image
+                                src={project.imageSrc}
+                                alt={project.imageAlt}
+                                layout="responsive"
+                                width={960}
+                                height={540}
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className={styles.descriptionContainer}>
                         <div className={styles.descriptionUpper}>
                             <div className={styles.descriptionCaption}>{project.descriptionCaption}</div>
                             <h3 className={styles.descriptionTitle}>{project.descriptionTitle}</h3>
-                            <h4 className={styles.descriptionBodyTitle}>{project.descriptionBodyTitle}</h4>
-                            <p className={styles.descriptionBody}>{project.descriptionBody}</p>
+                            <h4 className={styles.descriptionBodyTitle}>{project.descriptionBodyTitle} <span className={styles.descriptionLink}>Learn more.</span></h4>
                             <div className={styles.viewPage}>
                                 <a href={project.url} title={project.urlTitle} rel="noreferer" className={styles.viewPageLink}>
                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg">
