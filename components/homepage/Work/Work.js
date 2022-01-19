@@ -19,7 +19,7 @@ function Project() {
         },
         { 
             imageSrc: '/img/work/project-screenshots-b-hs.png',
-            imageAlt: 'Actionable Marketing Institute by CoSchedule',
+            imageAlt: 'Headline Studio by CoSchedule',
             descriptionCaption: 'Headline Studio by CoSchedule',
             descriptionTitle: 'New Product Squeeze Page',
             descriptionBodyTitle: 'Built a high converting product page for the new Headline Studio app using cross-team collaboration, research, and refinement.',

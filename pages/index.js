@@ -6,7 +6,7 @@ import Hero from '../components/homepage/Hero/Hero'
 import Process from '../components/homepage/Process/Process'
 import Work from '../components/homepage/Work/Work'
 
-function Home () {
+function Home() {
     return (
     <> 
         <Head>

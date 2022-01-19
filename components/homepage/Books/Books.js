@@ -9,22 +9,21 @@ function BooksContent() {
             author: 'Kristen Hadeed',
             coverImage: '/img/books/permission-to-screw-up.jpg',
         },
-        
         { 
             title: 'Daring Greatly',
             author: 'Brene Brown',
             coverImage: '/img/books/daring-greatly.jpg',
         },
-        { 
-            title: 'Atomic Habits',
-            author: 'James Clear',
-            coverImage: '/img/books/atomic-habits.jpg',
-        },
-        { 
-            title: 'Start With Why',
-            author: 'Simon Sinek',
-            coverImage: '/img/books/start-with-why.jpg',
-        },
+        // { 
+        //     title: 'Atomic Habits',
+        //     author: 'James Clear',
+        //     coverImage: '/img/books/atomic-habits.jpg',
+        // },
+        // { 
+        //     title: 'Start With Why',
+        //     author: 'Simon Sinek',
+        //     coverImage: '/img/books/start-with-why.jpg',
+        // },
         { 
             title: 'Leaders Eat Last',
             author: 'Simon Sinek',
@@ -40,21 +39,21 @@ function BooksContent() {
             author: 'Susan Cain',
             coverImage: '/img/books/quiet.jpg',
         },
-        { 
-            title: 'Make Your Bed',
-            author: 'Admiral William H. McRaven',
-            coverImage: '/img/books/make-your-bed.jpg',
-        },
+        // { 
+        //     title: 'Make Your Bed',
+        //     author: 'Admiral William H. McRaven',
+        //     coverImage: '/img/books/make-your-bed.jpg',
+        // },
         { 
             title: 'Man\'s Search For Meaning',
             author: 'Viktor E. Frankl',
             coverImage: '/img/books/mans-search-for-meaning.jpg',
         },
-        { 
-            title: 'Complete Guide to Money',
-            author: 'Dave Ramsey',
-            coverImage: '/img/books/complete-guide-to-money.jpg',
-        },
+        // { 
+        //     title: 'Complete Guide to Money',
+        //     author: 'Dave Ramsey',
+        //     coverImage: '/img/books/complete-guide-to-money.jpg',
+        // },
     ]
 
     return (

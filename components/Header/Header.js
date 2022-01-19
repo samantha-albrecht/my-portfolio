@@ -17,7 +17,7 @@ function SubNav() {
             <ul className={styles.navList}>
                 {navItems
                 .filter( navItem => navItem.isSubNav )
-                .map( navItem => <li className={styles.navItem}><a href={`#${navItem.id}`} title={`Jump to ${navItem.id} section`}>{navItem.name}</a></li> )
+                .map( navItem => <li className={styles.navItem}><a href={`/#${navItem.id}`} title={`Jump to ${navItem.id} section`}>{navItem.name}</a></li> )
                 }
             </ul>
         </nav>
@@ -28,7 +28,7 @@ function FullNav() {
     return (
         <nav className={styles.nav}>
             <ul className={styles.navList}>
-                {navItems.map( navItem => <li className={styles.navItem}><a href={`#${navItem.id}`} title={`Jump to ${navItem.id} section`}>{navItem.name}</a></li> )}
+                {navItems.map( navItem => <li className={styles.navItem}><a href={`/#${navItem.id}`} title={`Jump to ${navItem.id} section`}>{navItem.name}</a></li> )}
             </ul>
         </nav>
     )

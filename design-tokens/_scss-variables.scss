@@ -36,14 +36,10 @@ $breakpoint-xl: 1280px;
 @mixin caption-s($margin: 0 0 4px 0) {
   font-family: var(--mono-font-family);
   font-weight: var(--mono-font-weight-regular);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-s);
   line-height: 130%;
   color: var(--caption-color);
   margin: $margin;
-
-  @media (min-width: $breakpoint-m) {
-    font-size: var(--font-size-s);
-  }
 }
 
 @mixin title-3xl($margin: 0) {
