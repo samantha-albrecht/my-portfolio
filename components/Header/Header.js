@@ -1,5 +1,6 @@
 import styles from './Header.module.scss'
 import cn from 'classnames'
+import Link from "next/link";
 import { useEffect, useState } from 'react';
 import SectionContainer from '../SectionContainer/SectionContainer';
 
@@ -84,7 +85,11 @@ function Header() {
                     <div className={styles.container}>
                         <div className={styles.headerContainer}>
                             <div className={styles.headerInner}>
-                                <h1 className={styles.title} >Samantha Albrecht</h1>
+                                <h1 className={styles.title} >
+                                    <Link href="/">
+                                        <a>Samantha Albrecht</a>
+                                    </Link>
+                                    </h1>
                                 <div className={styles.subNav}>
                                     <SubNav />
                                     <button className={styles.navOpen} onClick={navToggle} title="Open navigation">

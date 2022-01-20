@@ -2,32 +2,29 @@ import cn from "classnames";
 import SectionContainer from "../../SectionContainer/SectionContainer";
 import styles from "./Work.module.scss"
 import Image from "next/image";
+import Link from "next/link";
 
 function Project() {
     const projects =[
         {
-            imageSrc: '/img/work/project-screenshots-b-ami.png',
+            imageSrc: '/img/work/project-screenshots-ami.png',
             imageAlt: 'Actionable Marketing Institute by CoSchedule', 
             descriptionCaption: 'Actionable Marketing Institute powered by CoSchedule',
-            descriptionTitle: 'Online Learning Course Catalog',
-            descriptionBodyTitle: 'Created engaging, user friendly web pages to refresh & renew the AMI product line and increase conversions.',
+            descriptionTitle: 'Online Marketing Course Pages',
+            descriptionBodyTitle: 'The challenge: create engaging, user friendly, customizable web pages to refresh & renew the AMI product line.',
+            projectUrl: '/work/actionable-marketing-institute',
             url: 'https://coschedule.com/actionable-marketing-institute/ami-pro',
             urlTitle: 'Go to the Actionable Marketing Institute',
-            descriptionOrganization: 'CoSchedule',
-            descriptionWork: [ 'Design', 'Front-end development' ],
-            descriptionLanguages: [ 'WordPress', 'PHP', 'HTML', 'SCSS','jQuery' ],
         },
         { 
-            imageSrc: '/img/work/project-screenshots-b-hs.png',
+            imageSrc: '/img/work/project-screenshots-hs.png',
             imageAlt: 'Headline Studio by CoSchedule',
             descriptionCaption: 'Headline Studio by CoSchedule',
-            descriptionTitle: 'New Product Squeeze Page',
-            descriptionBodyTitle: 'Built a high converting product page for the new Headline Studio app using cross-team collaboration, research, and refinement.',
+            descriptionTitle: 'New Product Sign Up Page',
+            descriptionBodyTitle: 'The challenge: design & build a high converting product page with sign up for the new Headline Studio app.',
+            projectUrl: '/work/headline-studio',
             url: 'https://coschedule.com/headline-studio',
             urlTitle: 'Go to Headline Studio',
-            descriptionOrganization: 'CoSchedule',
-            descriptionWork: [ 'Design', 'Front-end development' ],
-            descriptionLanguages: [ 'HTML', 'SCSS','jQuery' ],
         },
     ]
     
@@ -53,7 +50,7 @@ function Project() {
                         <div className={styles.descriptionUpper}>
                             <div className={styles.descriptionCaption}>{project.descriptionCaption}</div>
                             <h3 className={styles.descriptionTitle}>{project.descriptionTitle}</h3>
-                            <h4 className={styles.descriptionBodyTitle}>{project.descriptionBodyTitle} <span className={styles.descriptionLink}>Learn more.</span></h4>
+                            <h4 className={styles.descriptionBodyTitle}>{project.descriptionBodyTitle} <Link href={project.projectUrl}><a className={styles.descriptionLink}>Learn more about this project.</a></Link></h4>
                             <div className={styles.viewPage}>
                                 <a href={project.url} title={project.urlTitle} rel="noreferer" className={styles.viewPageLink}>
                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg">
@@ -63,24 +60,6 @@ function Project() {
                                 </a>
                             </div>
                         </div>
-                        {/* <div className={cn(styles.descriptionLower, styles.descriptionOrganization)}>
-                            <h4 className={styles.descriptionSubTitle}>Organization</h4>
-                            <ul className={styles.descriptionList}>
-                                <li className={styles.descriptionListItem}>{project.descriptionOrganization}</li>
-                            </ul>
-                        </div>
-                        <div className={cn(styles.descriptionLower, styles.descriptionWork)}>
-                            <h4 className={styles.descriptionSubTitle}>Work</h4>
-                            <ul className={styles.descriptionList}>
-                                {project.descriptionWork.map( descriptionWork => <li className={styles.descriptionListItem}>{descriptionWork}</li> )}
-                            </ul>
-                        </div>
-                        <div className={cn(styles.descriptionLower, styles.descriptionLanguages)}>
-                            <h4 className={styles.descriptionSubTitle}>Languages</h4>
-                            <ul className={styles.descriptionList}>
-                                {project.descriptionLanguages.map( descriptionLanguages => <li className={styles.descriptionListItem}>{descriptionLanguages}</li> )}
-                            </ul>
-                        </div> */}
                     </div>
                 </SectionContainer>
             )

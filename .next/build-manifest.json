@@ -29,10 +29,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/work/headline-studio": [
+    "/work/actionable-marketing-institute": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/work/headline-studio.js"
+      "static/chunks/pages/work/actionable-marketing-institute.js"
     ]
   },
   "ampFirstPages": []

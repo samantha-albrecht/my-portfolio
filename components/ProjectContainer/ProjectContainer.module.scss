@@ -12,8 +12,8 @@
   }
 }
 
-.projectTocContainer {
-  padding: 0 16px;
+.projectAsideContainer {
+  // padding: 0 16px;
   display: none;
 }
 
@@ -26,6 +26,20 @@
   grid-template-rows: auto;
   grid-auto-flow: row;
   row-gap: 16px;
+}
+
+.projectTocItem {
+  display: block;
+  @include title-s();
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  color: var(--link-color);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(link-color-hover);
+    background-color: var(--page-view-background-color-hover);
+  }
 }
 
 .projectDetailsContainer {
@@ -54,6 +68,14 @@
 
 .imageContainer {
   display: block;
+  overflow: hidden;
+  margin: 36px 0;
+  border-radius: var(--border-radius-lg);
+
+  &.imageMain {
+    margin: 0;
+    box-shadow: 0 3px 16px 0 rgba(79, 121, 255, 0.2);
+  }
 }
 
 .projectBodyTitle {
@@ -103,9 +125,12 @@
 }
 
 @media (min-width: $breakpoint-l) {
-  .projectTocContainer {
+  .projectAsideContainer {
     grid-area: 2 / 1 / 3 / 2;
     display: block;
+    align-self: start;
+    position: sticky;
+    top: 120px;
   }
 
   .projectHeadingContainer {
@@ -115,11 +140,6 @@
 
   .projectBodyContainer {
     grid-area: 2 / 2 / 3 / 3;
-  }
-
-  .tableOfContents {
-    position: sticky;
-    top: 50px;
   }
 
   .projectDetailsContainer {
