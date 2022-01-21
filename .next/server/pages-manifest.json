@@ -1,10 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/about": "pages/about.html",
-  "/": "pages/index.html",
-  "/work/actionable-marketing-institute": "pages/work/actionable-marketing-institute.html",
-  "/work/headline-studio": "pages/work/headline-studio.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js"
 }
