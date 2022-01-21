@@ -27,5 +27,8 @@
     "sanitize.css": "^13.0.0",
     "sass": "^1.43.4",
     "sharp": "^0.29.3"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.2.0"
   }
 }
