@@ -145,4 +145,10 @@
   .projectDetailsContainer {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .imageContainer.imageSmall {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

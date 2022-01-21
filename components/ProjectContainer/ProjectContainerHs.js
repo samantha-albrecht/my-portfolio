@@ -104,13 +104,13 @@ function ProjectContainerHS() {
                 <p className={styles.projectBodyParagraph}>Once we were feeling good about the layout, I moved on to design. Not only did this include the page design, but also all the page graphics and&nbsp;icons.</p>
                 <p className={styles.projectBodyParagraph}>The Headline Studio brand uses unique colors and icon styles that differentiate it from the main CoSchedule bran. To unify the brands the same font family is&nbsp;use.</p>
                 <p className={styles.projectBodyParagraph}>Since This was the first page for Headline Studio I had the freedom to choose the colors and incorporate new design elements to make it feel&nbsp;fresh.</p>
-                <div className={styles.imageContainer}>
+                <div className={cn(styles.imageContainer, styles.imageSmall)}>
                     <Image
-                    src="/img/work/headline-studio/project-screenshots-hs-design.png"
+                    src="/img/work/headline-studio/project-screenshots-hs-graphic.png"
                     alt="Custom product graphics for Headline Studio."
                     layout="responsive"
-                    width={1080}
-                    height={898}
+                    width={600}
+                    height={600}
                     />
                 </div>
                 <h3 className={styles.projectBodySubTitleLg}>Build</h3>
