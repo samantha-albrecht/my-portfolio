@@ -93,7 +93,7 @@ function Header() {
                                 <div className={styles.subNav}>
                                     <SubNav />
                                     <button className={styles.navOpen} onClick={navToggle} title="Open navigation">
-                                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                        <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLineJoin="round" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
                                             <polyline points="9 18 15 12 9 6"></polyline>
                                         </svg>
                                     </button>
@@ -105,7 +105,7 @@ function Header() {
                                     <FullNav />
                                     <a href="https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/" rel="noopener noreferrer nofollow" className={styles.secondaryButton}>Contact</a>
                                     <button className={styles.navClose} onClick={navToggle} title="Close navigation">
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
+                                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
                                             <path fill="none" d="M0 0h24v24H0z"></path>
                                             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
                                         </svg>

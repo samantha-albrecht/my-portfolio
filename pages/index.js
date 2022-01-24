@@ -12,7 +12,7 @@ function Home() {
         <Head>
             <title>Samantha Albrecht | Web Designer + Developer</title>
             <meta name="description" content=""/>
-            <link rel="alternate" hreflang="en" href="https://www.samanthaalbrecht.com" />
+            <link rel="alternate" hrefLang="en" href="https://www.samanthaalbrecht.com" />
             <link rel="canonical" href="https://www.samanthaalbrecht.com"/>
         </Head>
 
