@@ -3,7 +3,6 @@
 .container {
   display: flex;
   justify-content: center;
-  // overflow-x: hidden;
 }
 
 .gridLayout {
@@ -86,6 +85,7 @@
 
   &Hero {
     background-color: var(--lt-card-color);
+    overflow-x: hidden;
 
     .gridLayout {
       grid-template-rows: 36px auto 36px;

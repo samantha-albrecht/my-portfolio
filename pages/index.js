@@ -11,9 +11,10 @@ function Home() {
     <> 
         <Head>
             <title>Samantha Albrecht | Web Designer + Developer</title>
-            <meta name="description" content=""/>
+            <meta name="robots" content="noindex" />
+            <meta name="description" content="Hi, I'm Samantha a designer, developer, creative problem solver. I design and build web experiences that convert." />
             <link rel="alternate" hrefLang="en" href="https://www.samanthaalbrecht.com" />
-            <link rel="canonical" href="https://www.samanthaalbrecht.com"/>
+            <link rel="canonical" href="https://www.samanthaalbrecht.com" />
         </Head>
 
         <Hero/>

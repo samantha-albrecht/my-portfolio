@@ -24,8 +24,6 @@ function Experience() {
                                 </div>
                                 <ul className={styles.jobList}>
                                     <li>Increase conversion rates on multiple pages by up to 50% through A/B&nbsp;testing.</li>
-                                    {/* <li>Improve overall website performance to meet Google’s Page Experience&nbsp;Signals.</li> */}
-                                    {/* <li>Collaborate with cross-functional team to align the website strategy with business&nbsp;objectives.</li> */}
                                     <li>Organize and promote employee engagement events, such as homecoming week, annual chili cook-off, and donation drives as a member of the “Spirit&nbsp;Team.”</li>
                                 </ul>
                                 <div className={styles.subTitleLayout}>
@@ -33,19 +31,14 @@ function Experience() {
                                     <div className={styles.date}>April 2020 - April 2021</div>
                                 </div>
                                 <ul className={styles.jobList}>
-                                    {/* <li>Elevated academy product line with custom designed and built Wordpress templates for the marketing&nbsp;team.</li> */}
                                     <li>Participated in the end-to-end design process from initial ideation, wireframes, and design to building function responsive web&nbsp;pages.</li>
-                                    {/* <li>Transitioned between multiple product lines with distinct branding&nbsp;guidelines.</li> */}
-                                    {/* <li>Communicate with and seek feedback from project stakeholders throughout project&nbsp;lifecycle.</li> */}
                                 </ul>
                                 <div className={styles.subTitleLayout}>
                                     <h4 className={styles.subTitle}>Graphic Design Intern</h4>
                                     <div className={styles.date}>January 2019 - April 2020</div>
                                 </div>
                                 <ul className={styles.jobList}>
-                                    {/* <li>Lead designer on a 6-chapter guide distributed to all CoSchedule&nbsp;customers.</li> */}
-                                    {/* <li>Create custom graphics for internal marketing team including podcast graphics, conference booth design, and tearsheet&nbsp;layout.</li> */}
-                                    <li>Design illustrations and infographics for CoSchedule’s blog to enhance reader experience and content&nbsp;understanding.</li>
+                                    <li>Design custom illustrations and infographics for blog posts that support the main points and help the reader quickly understand the content.</li>
                                 </ul>
                             </div>
                             <div className={styles.jobContainer}>
@@ -60,9 +53,7 @@ function Experience() {
                                     <div className={styles.date}>2018-2019</div>
                                 </div>
                                 <ul className={styles.jobList}>
-                                    <li>Responsible for building, updating, and executing tactical marketing plans to promote our small events. <em>Small events had between 100 - 300 attendees and took place in locations around the&nbsp;globe.</em></li>
-                                    {/* <li>Created a high volume of marketing materials for each event while adhering to visual identity guidelines. (Materials include marketing kits for speakers &amp; sponsors, social media graphics, email graphics, infographics, videos, and PowerPoint&nbsp;templates.)</li> */}
-                                    {/* <li>Designed digital and print onsite signage and coordinated printing &amp; delivery for each event. (Used standard U.S. and International paper&nbsp;sizes.)</li> */}
+                                    <li>Responsible for building, updating, and executing tactical marketing plans to promote events with 100-300 attendees in Canada, Europe, South Africa, and the United&nbsp;States.</li>
                                 </ul>
                             </div>
                             <div className={styles.educationContainer}>
