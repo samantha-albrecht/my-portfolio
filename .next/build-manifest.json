@@ -28,6 +28,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/work/actionable-marketing-institute": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/work/actionable-marketing-institute.js"
+    ],
+    "/work/headline-studio": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/work/headline-studio.js"
     ]
   },
   "ampFirstPages": []

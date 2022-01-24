@@ -1,5 +1,4 @@
 import SectionContainer from '../SectionContainer/SectionContainer';
-import Image from 'next/image';
 import styles from './ProjectContainer.module.scss';
 import cn from 'classnames';
 
@@ -21,18 +20,13 @@ function ProjectContainerHS() {
                 <h1 className={styles.projectTitle}>Online Marketing Course Pages</h1>
             </div>
             <div className={styles.projectBodyContainer}>
-                
-                <div className={cn(styles.imageContainer, styles.imageMain)}>
-                    <Image
+                    <img
+                    className={cn(styles.imageContainer, styles.imageMain)}
                     src="/img/work/actionable-marketing-institute/project-screenshots-ami-main-view.png"
                     alt="Actionable Marketing Institute powered by CoSchedule"
-                    priority="true"
-                    layout="responsive"
-                    width={960}
-                    height={540}
-                    />
-                </div>
-                
+                    width={810}
+                    height={455}
+                    />                
                 <h2 id="problem" className={styles.projectBodyTitle}>Problem</h2>
                 <p className={styles.projectBodyParagraph}>The CoSchedule marketing team had been building a library of marketing courses on Teachable* over the past three years. The courses are perfect for marketers looking for no-fluff training, however the courses were highly under&nbsp;utilized.</p>
                 <p className={styles.projectBodyParagraph}>The constraints of the Teachable platform created a poor user experience for prospective students. It was hard to view the full course list and understand the value of the Actionable Marketing Institute (formerly CoSchedule Academy). We wanted prospective students to be able to find exactly what they wanted to learn, when they wanted to learn&nbsp;it.</p>
@@ -59,91 +53,86 @@ function ProjectContainerHS() {
                 <h4 className={styles.projectBodySubTitleMd}>Course Pages</h4>
                 <p className={styles.projectBodyParagraph}>There are a few key areas I focused on while wireframing: the hero section, the lessons, and the plan&nbsp;comparison</p>
                 <p className={styles.projectBodyParagraph}><strong>Hero &#8211;</strong> To give prospective students a quick course snapshot I included a few course details including course level, course category, est. time to complete, number of lessons, and number of&nbsp;resources.</p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/actionable-marketing-institute/project-screenshots-ami-course-details.png"
                     alt="AMI Course details wireframe."
-                    layout="responsive"
                     width={1080}
-                    height={734}
+                    height={550}
+                    loading="lazy"
                     />
-                </div>
                 <p className={styles.projectBodyParagraph}><strong>Lessons &#8211;</strong> I played around with various lesson layouts including a condensed list with a video preview compared to an expanded list with a short description for each&nbsp;lesson.</p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/actionable-marketing-institute/project-screenshots-ami-lessons-1.png"
                     alt="AMI Course lessons wireframe."
                     layout="responsive"
-                    width={1080}
-                    height={566}
+                    width={810}
+                    height={424}
+                    loading="lazy"
                     />
-                </div>
                 <p className={styles.projectBodyParagraph}><strong>Plan comparison &#8211;</strong> We wanted to emphasize the value of purchasing AMI Pro which includes all courses vs purchasing a single course. I chose a two column layout to compare plans side by&nbsp;side.</p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/actionable-marketing-institute/project-screenshots-ami-plan-comparison.png"
                     alt="Sticky sign up form wireframe."
-                    layout="responsive"
-                    width={1080}
-                    height={805}
+                    width={810}
+                    height={604}
+                    loading="lazy"
                     />
-                </div>
                 <h4 className={styles.projectBodySubTitleMd}>Homepage</h4>
                 <p className={styles.projectBodyParagraph}>Originally we were going to build a course catalog and a homepage. Through the wireframing process it became clear how similar the pages were. Combining the pages streamlined the user experience. No switching between pages, now all the information would be on one page. The course catalog became the main feature on the&nbsp;homepage.</p>
                 <p className={styles.projectBodyParagraph}><strong>Course catalog &#8211;</strong> First I explored how to display the course cards, comparing the pros and cons of showing all courses like a library or condensing them into a carousel. The carousel allows users to look through the courses without completely taking over the&nbsp;page.</p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
+                    className={styles.imageContainer}
                     src="/img/work/actionable-marketing-institute/project-screenshots-ami-course-categories.png"
                     alt="AMI Pro course categories wireframe."
-                    layout="responsive"
-                    width={1080}
-                    height={975}
+                    width={810}
+                    height={731}
+                    loading="lazy"
                     />
-                </div>
                 <p className={styles.projectBodyParagraph}>If a user is looking for a specific type of course, I included the ability to filter the courses by selecting a&nbsp;category.</p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/actionable-marketing-institute/project-screenshots-ami-course-carousel-1.png"
                     alt="AMI Pro course carousel wireframe."
-                    layout="responsive"
-                    width={1080}
-                    height={694}
+                    width={810}
+                    height={521}
+                    loading="lazy"
                     />
-                </div>
                 <p className={styles.projectBodyParagraph}>I also tried various card layouts, taking into consideration what was the most valuable information to include. For example, one variation included the course instructor&#8212;although our instructors are marketing wizards, they are probably not well known. Including their names is not as valuable as other course details. Ultimately, each course card includes the title, description, number of lessons, estimated time to completion, and certification if&nbsp;applicable.</p>
                 
                 <h3 className={styles.projectBodySubTitleLg}>Design</h3>
                 <p className={styles.projectBodyParagraph}>As I mentioned earlier, Actionable Marketing Institute was formerly CoSchedule Academy. Along with a new name AMI got a new brand crafted by our Senior Graphic Designer, who created all the graphics for these&nbsp;pages.</p>
                 <p className={styles.projectBodyParagraph}>The AMI brand is fun, trendy, and eye-catching with bright colors and unique iconography for each course. The goal of the design was to complement the new brand, allowing the incredible illustrations to stand&nbsp;out.</p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/actionable-marketing-institute/project-screenshots-ami-graphics.png"
                     alt="Custom illustrations for Actionable Marketing Institute Courses."
-                    layout="responsive"
-                    width={1080}
-                    height={545}
+                    width={810}
+                    height={409}
+                    loading="lazy"
                     />
-                </div>
                 <h3 className={styles.projectBodySubTitleLg}>Build</h3>
                 <p className={styles.projectBodyParagraph}>An important requirement of this project was to give the marketing team complete control over the page content to update as needed, and allow them to add new course pages as new courses are released. This meant that everything needed to be editable from the copy to the&nbsp;color.</p>
                 <p className={styles.projectBodyParagraph}>The pages were built as templates and use Advanced Custom Fields and PHP to dynamically add content and&nbsp;color.</p>
                 <p className={styles.projectBodyParagraph}>Behind the scenes functionality:</p>
                 <ul className={styles.projectBodyList}>
-                  <li>Flexible layouts to accommodate for more or less content on each&nbsp;page.</li>
-                  <li>Customizable colors to make each page&nbsp;unique.</li>
-                  <li>Optional elements. The hello bar and exit offer can be shown or hidden at any&nbsp;time.</li>
-                  <li>Promo callouts. There are fun arrows and additional copy that can be added when running a&nbsp;promotion.</li>
-                  <li>Course carousel. Fully responsive, filterable, and adapts as new courses are added to the&nbsp;list.</li>
+                    <li>Flexible layouts to accommodate for more or less content on each&nbsp;page.</li>
+                    <li>Customizable colors to make each page&nbsp;unique.</li>
+                    <li>Optional elements. The hello bar and exit offer can be shown or hidden at any&nbsp;time.</li>
+                    <li>Promo callouts. There are fun arrows and additional copy that can be added when running a&nbsp;promotion.</li>
+                    <li>Course carousel. Fully responsive, filterable, and adapts as new courses are added to the&nbsp;list.</li>
                 </ul>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/actionable-marketing-institute/project-screenshots-ami-course-carousel-2.png"
                     alt="AMI Pro course carousel."
-                    layout="responsive"
-                    width={1080}
-                    height={613}
+                    width={810}
+                    height={460}
+                    loading="lazy"
                     />
-                </div>
 
                 <h2 id="outcomes" className={styles.projectBodyTitle}>Outcomes</h2>
                 <p className={styles.projectBodyParagraph}>Since launching the new website pages the marketing team has been able to amp up promotion of the Actionable Marketing Institute. We’ve seen significantly higher conversion rates and consistent&nbsp;growth.</p>

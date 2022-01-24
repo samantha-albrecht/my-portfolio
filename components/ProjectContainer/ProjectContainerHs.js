@@ -1,5 +1,4 @@
 import SectionContainer from '../SectionContainer/SectionContainer';
-import Image from 'next/image';
 import styles from './ProjectContainer.module.scss';
 import cn from 'classnames';
 
@@ -21,18 +20,13 @@ function ProjectContainerHS() {
                 <h1 className={styles.projectTitle}>New Product Signup Page</h1>
             </div>
             <div className={styles.projectBodyContainer}>
-                
-                <div className={cn(styles.imageContainer, styles.imageMain)}>
-                    <Image
+                    <img
+                    className={cn(styles.imageContainer, styles.imageMain)}
                     src="/img/work/headline-studio/project-screenshots-hs-main-view.png"
                     alt="Headline Studio by CoSchedule"
-                    priority="true"
-                    layout="responsive"
-                    width={960}
-                    height={540}
-                    />
-                </div>
-                
+                    width={810}
+                    height={455}
+                    />                
                 <h2 id="problem" className={styles.projectBodyTitle}>Problem</h2>
                 <p className={styles.projectBodyParagraph}>CoSchedule Headline Analyzer was launched in 2018 and quickly became the #1 Free Headline Analyzer tool. Two years later the analyzer had become slow and&nbsp;outdated.</p>
                 <p className={styles.projectBodyParagraph}>To bring users the best experience possible it was time to turn Headline Analyzer into a higher performing web application with all new premium features. So, Headline Studio was&nbsp;born.</p>
@@ -61,26 +55,24 @@ function ProjectContainerHS() {
                 <p className={styles.projectBodyParagraph}><strong>No form &#8211;</strong> From previous tests we knew that reducing the number of clicks to sign up increases conversion rates. Therefore, the no form version was out. The form had to be on the&nbsp;page.</p>
                 <p className={styles.projectBodyParagraph}><strong>Static form &#8211;</strong> Webpages are like billboards, you only have a few seconds to get your message across. Some visitors may scroll and skim the headings, but the vast majority will leave if the call to action is&nbsp;unclear.</p>
                 <p className={styles.projectBodyParagraph}>In order to make the sign up form immediately visible it was placed "above&nbsp;the&nbsp;fold."</p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/headline-studio/project-screenshots-hs-static-form.png"
                     alt="Static sign up form wireframe."
-                    layout="responsive"
-                    width={1080}
-                    height={1206}
+                    width={810}
+                    height={903}
+                    loading="lazy"
                     />
-                </div>
                 <p className={styles.projectBodyParagraph}><strong>Sticky form &#8211;</strong> Now that we have the form on the page, I took it one step further. Because there is a lot of content on the page it's very long. Instead of making the visitor find the form at the top of the page, the layout accommodated space for the form to follow them down the&nbsp;page.</p>
                 <p className={styles.projectBodyParagraph}><em>Mobile note: the form requires a click to open on mobile, however we know the majority of our users are on desktop. This was not a big&nbsp;concern.</em></p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/headline-studio/project-screenshots-hs-sticky-form.png"
                     alt="Sticky sign up form wireframe."
-                    layout="responsive"
-                    width={1080}
-                    height={1027}
+                    width={810}
+                    height={768}
+                    loading="lazy"
                     />
-                </div>
                 <h4 className={styles.projectBodySubTitleMd}>Pricing</h4>
                 <p className={styles.projectBodyParagraph}>The pricing section has a big job - to make the user feel informed enough to make a purchasing decision. It has to communicate complex information in an easy-to-understand&nbsp;way.</p>
                 <p className={styles.projectBodyParagraph}>We went through a dozen versions of pricing with conversations&nbsp;around:</p>
@@ -91,28 +83,26 @@ function ProjectContainerHS() {
                     <li>How do we show the savings between monthly and annual&nbsp;pricing?</li>
                 </ul>
                 <p className={styles.projectBodyParagraph}>In the end, the pricing section was designed to focus on the paid plans, highlighting the premium features Headline Studio Pro includes. A toggle was used to compare monthly and annual prices. And it was important to include the free plan for visitors who were not ready to purchase, therefore, a small callout was added under the paid&nbsp;plans.</p>
-                <div className={styles.imageContainer}>
-                    <Image
+                    <img
+                    className={styles.imageContainer}
                     src="/img/work/headline-studio/project-screenshots-hs-pricing.png"
                     alt="Pricing wireframe."
-                    layout="responsive"
-                    width={1080}
-                    height={800}
+                    width={810}
+                    height={599}
+                    loading="lazy"
                     />
-                </div>
                 <h3 className={styles.projectBodySubTitleLg}>Design</h3>
                 <p className={styles.projectBodyParagraph}>Once we were feeling good about the layout, I moved on to design. Not only did this include the page design, but also all the page graphics and&nbsp;icons.</p>
                 <p className={styles.projectBodyParagraph}>The Headline Studio brand uses unique colors and icon styles that differentiate it from the main CoSchedule bran. To unify the brands the same font family is&nbsp;use.</p>
                 <p className={styles.projectBodyParagraph}>Since This was the first page for Headline Studio I had the freedom to choose the colors and incorporate new design elements to make it feel&nbsp;fresh.</p>
-                <div className={cn(styles.imageContainer, styles.imageSmall)}>
-                    <Image
+                    <img
+                    className={cn(styles.imageContainer, styles.imageSmall)}
                     src="/img/work/headline-studio/project-screenshots-hs-graphic.png"
                     alt="Custom product graphics for Headline Studio."
-                    layout="responsive"
-                    width={600}
-                    height={600}
+                    width={405}
+                    height={405}
+                    loading="lazy"
                     />
-                </div>
                 <h3 className={styles.projectBodySubTitleLg}>Build</h3>
                 <p className={styles.projectBodyParagraph}>Now it was time to bring the page to life. I built the main page using HTML, CSS (LESS), and jQuery. Getting the sign up form connected to our accounts system required help from our&nbsp;engineers.</p>
                 <p className={styles.projectBodyParagraph}>Throughout the project I discussed ideas and received feedback from product owners and stakeholders during twice-weekly&nbsp;demos.</p>

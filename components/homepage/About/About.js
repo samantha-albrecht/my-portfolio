@@ -1,7 +1,6 @@
 import SectionContainer from "../../SectionContainer/SectionContainer";
 import ButtonLink from "../../ui/ButtonLink/ButtonLink";
 import styles from "./About.module.scss";
-import Image from "next/image";
 import cn from "classnames";
 
 function About() {
@@ -25,40 +24,33 @@ function About() {
                     <div className={styles.imagesContainer}>
                         <div className={styles.imagesLayout}>
                             <div className={cn(styles.imageInner, styles.imageInnerHeadshot)}>
-                                <div className={styles.image}>
-                                    <Image
+                                    <img
+                                    className={styles.image}
                                         src="/img/about/headshot.png"
                                         alt="Samantha headshot"
-                                        layout="responsive"
-                                        objectFit="cover"
                                         width={400}
                                         height={380}
+                                        loading="lazy"
                                         />
-                                </div>
                             </div>
                             <div className={cn(styles.imageInner, styles.imageInnerWacky)}>
-                                <div className={styles.image}>
-                                    <Image
+                                    <img
+                                    className={styles.image}
                                         src="/img/about/wacky-wednesday.png"
                                         alt="Samantha dressed for Wacky Wednesday"
-                                        layout="responsive"
-                                        objectFit="cover"
                                         width={400}
                                         height={380}
                                         />
-                                </div>
                             </div>
                             <div className={cn(styles.imageInner, styles.imageInnerHalloween)}>
-                                <div className={styles.image}>
-                                    <Image
+                                    <img
+                                    className={styles.image}
                                         src="/img/about/halloween.png"
                                         alt="Samantha dressed as Inspector Gadget"
-                                        layout="responsive"
-                                        objectFit="cover"
                                         width={400}
                                         height={800}
+                                        loading="lazy"
                                         />
-                                </div>
                             </div>
                         </div>
                         <p className={styles.imageCredit}><span>Photos by:</span><br/>Haley Frost Creative &amp; CoSchedule</p>

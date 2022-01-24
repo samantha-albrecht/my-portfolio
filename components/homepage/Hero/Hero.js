@@ -1,6 +1,5 @@
 import SectionContainer from '../../SectionContainer/SectionContainer';
 import ButtonLink from '../../ui/ButtonLink/ButtonLink';
-import Image from "next/image";
 import styles from './Hero.module.scss';
 
 function Hero() {
@@ -16,16 +15,13 @@ function Hero() {
                             See my work
                         </ButtonLink>
                     </div>
-                    <div className={styles.imageContainer}>
-                            <Image
-                            src="/img/hero/hero-graphic.png"
-                            alt=""
-                            layout="responsive"
-                            width={350}
-                            height={350}
-                            />
-                            
-                        </div>
+                    <img
+                    className={styles.image}
+                    src="/img/hero/hero-graphic.png"
+                    alt="design and development graphic"
+                    width={240}
+                    height={240}
+                    />
                     <div className={styles.squareLarge}></div>
                     <div className={styles.squareSmall}></div>
                 </div>

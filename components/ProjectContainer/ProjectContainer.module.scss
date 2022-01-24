@@ -67,8 +67,8 @@
 }
 
 .imageContainer {
-  display: block;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
   margin: 36px 0;
   border-radius: var(--border-radius-lg);
 

@@ -1,6 +1,5 @@
 import SectionContainer from "../../SectionContainer/SectionContainer";
 import styles from "./Books.module.scss";
-import Image from "next/image";
 
 function BooksContent() {
     const books =[
@@ -61,14 +60,11 @@ function BooksContent() {
             {books.map( (book, index) => 
             (
                 <div className={styles.bookGroup} key={index}>
-                    <div className={styles.bookCoverImage}>
-                        <Image
-                        src={book.coverImage}
-                        alt={`Book cover image: ${book.title}`}
-                        layout="fill"
-                        objectFit="contain"
-                        />
-                    </div>
+                    <img
+                    className={styles.bookCoverImage}
+                    src={book.coverImage}
+                    alt={`Book cover image: ${book.title}`}
+                    />
                     <p className={styles.bookTitle}>{book.title}</p>
                     <p className={styles.bookAuthor}>{book.author}</p>
                 </div>

@@ -1,7 +1,6 @@
 import cn from "classnames";
 import SectionContainer from "../../SectionContainer/SectionContainer";
 import styles from "./Work.module.scss"
-import Image from "next/image";
 import Link from "next/link";
 
 function Project() {
@@ -35,15 +34,14 @@ function Project() {
                 <SectionContainer section={'Work'} key={index}>
                     <div className={styles.contentContainer}>
                         <div className={styles.contentInner}>
-                            <div className={styles.imageContainer}>
-                                <Image
-                                src={project.imageSrc}
-                                alt={project.imageAlt}
-                                layout="responsive"
-                                width={960}
-                                height={540}
-                                />
-                            </div>
+                            <img
+                            className={styles.image}
+                            src={project.imageSrc}
+                            alt={project.imageAlt}
+                            width={960}
+                            height={540}
+                            loading="lazy"
+                            />
                         </div>
                     </div>
                     <div className={styles.descriptionContainer}>
