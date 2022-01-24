@@ -4,6 +4,7 @@
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   position: relative;
   z-index: 3;
 }
@@ -48,6 +49,19 @@
   width: 180px;
   background-color: var(--lt-square-color);
   opacity: 0.4;
+}
+
+.imageContainer {
+  grid-area: 1 / 1 / 2 / 2;
+  display: none;
+  padding: 16px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 4;
+
+  @media (min-width: $breakpoint-l) {
+    display: block;
+  }
 }
 
 .caption {
