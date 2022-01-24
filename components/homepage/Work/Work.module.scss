@@ -1,0 +1,164 @@
+@import "../../../design-tokens/scss-variables";
+
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  z-index: 3;
+}
+
+.contentInnerTitle {
+  grid-area: 1 / 1 / 2 / 5;
+  padding: 0 16px;
+}
+
+.caption {
+  @include caption();
+}
+
+.sectionTitle {
+  @include title-2xl($margin: 0 0 24px 0);
+}
+
+.contentInner {
+  grid-area: 1 / 1 / 2 / 5;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.descriptionContainer {
+  grid-area: 3 / 2 / 4 / 3;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  z-index: 4;
+}
+
+.descriptionUpper {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 32px 16px;
+  position: relative;
+}
+
+.descriptionCaption {
+  @include caption-s();
+}
+
+.descriptionTitle {
+  @include title-xl($margin: 0 0 24px 0);
+}
+
+.viewPage {
+  position: absolute;
+  bottom: 0px;
+  right: 16px;
+
+  &Link {
+    color: var(--text-color);
+    padding: 5px 8px 8px;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--icon-color);
+      background-color: var(--page-view-background-color-hover);
+    }
+  }
+}
+
+.descriptionLower {
+  padding: 24px 16px 0;
+}
+
+.descriptionBodyTitle {
+  @include body();
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1px;
+    left: 0;
+    top: 12px;
+    background-color: var(--description-line-color);
+  }
+}
+
+.descriptionLink {
+  @include text-link();
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--page-view-background-color-hover);
+  }
+}
+
+.descriptionSubTitle {
+  @include caption-s($margin: 0 0 8px 0);
+}
+
+.descriptionListItem {
+  font-size: var(--font-size-s);
+  margin: 4px 0;
+}
+
+@media (min-width: $breakpoint-m) {
+  .descriptionContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .descriptionUpper {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .descriptionContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .descriptionUpper {
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: rgba(242, 246, 256, 0.9);
+    padding: 32px 40px;
+    margin-top: -80px;
+  }
+
+  .descriptionBodyTitle {
+    padding-left: 48px;
+
+    &::before {
+      width: 40px;
+    }
+  }
+
+  .viewPage {
+    bottom: 28px;
+    right: 28px;
+  }
+
+  .descriptionLower {
+    padding: 24px 40px;
+  }
+
+  .descriptionOrganization {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .descriptionWork {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .descriptionLanguages {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+}

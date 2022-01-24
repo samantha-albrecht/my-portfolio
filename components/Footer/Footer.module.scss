@@ -1,0 +1,49 @@
+@import "../../design-tokens/scss-variables.scss";
+
+.footer {
+  border-top: 1px dashed var(--dk-guide-color);
+  background-color: var(--dk-background-color);
+}
+
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  z-index: 3;
+}
+
+.contentInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--dk-footer-color);
+  font-size: var(--font-size-xs);
+  padding: 16px;
+}
+
+.socialContainer {
+  margin-top: 8px;
+}
+
+.socialLink {
+  padding: 4px 16px 4px 0;
+  margin-top: 8px;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--knockout-color);
+  }
+}
+
+@media (min-width: $breakpoint-m) {
+  .contentInner {
+    flex-direction: row;
+    padding: 4px 8px 4px 16px;
+  }
+
+  .socialContainer {
+    margin-top: 0;
+  }
+
+  .socialLink {
+    padding: 4px 8px;
+  }
+}

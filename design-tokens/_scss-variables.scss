@@ -1,0 +1,147 @@
+// Spacers
+$spacer-xs: 4px;
+$spacer-s: 8px;
+$spacer-m: 16px;
+$spacer-l: 24px;
+$spacer-xl: 32px;
+
+// Breakpoints
+$breakpoint-s: 640px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+$breakpoint-xl: 1280px;
+
+// Typography
+@mixin caption($color: var(--caption-color)) {
+  font-family: var(--mono-font-family);
+  font-weight: var(--mono-font-weight-regular);
+  font-size: var(--font-size-ms);
+  line-height: 130%;
+  color: $color;
+  margin-bottom: 8px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1.5px;
+    background-color: $color;
+    top: 2px;
+    left: -16px;
+    height: 16px;
+    position: absolute;
+  }
+}
+
+@mixin caption-s($margin: 0 0 4px 0) {
+  font-family: var(--mono-font-family);
+  font-weight: var(--mono-font-weight-regular);
+  font-size: var(--font-size-s);
+  line-height: 130%;
+  color: var(--caption-color);
+  margin: $margin;
+}
+
+@mixin title-3xl($margin: 0) {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 120%;
+  margin: $margin;
+
+  @media (min-width: $breakpoint-l) {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+@mixin title-2xl($margin: 0) {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-book);
+  line-height: 130%;
+  margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@mixin title-xl($margin: 0) {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@mixin title-l($margin: 0) {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-l);
+  }
+}
+
+@mixin title-m($margin: 0) {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-book);
+  line-height: 130%;
+  margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-m);
+  }
+}
+
+@mixin title-s($margin: 0) {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-book);
+  line-height: 130%;
+  margin: $margin;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: var(--font-size-s);
+  }
+}
+
+@mixin title-xs($margin: 0) {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 130%;
+  margin: $margin;
+}
+
+@mixin body() {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-book);
+  font-size: var(--font-size-ms);
+  font-style: normal;
+  line-height: 180%;
+  letter-spacing: 0.03rem;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin nav() {
+  font-family: var(--mono-font-family);
+  font-weight: var(--mono-font-weight-regular);
+  font-style: normal;
+  font-size: var(--font-size-s);
+  color: var(--nav-color);
+  line-height: 130%;
+}
+
+@mixin text-link() {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-book);
+  font-size: var(--font-size-ms);
+  font-style: normal;
+  line-height: 180%;
+  letter-spacing: 0.03rem;
+  color: var(--link-color);
+  -webkit-font-smoothing: antialiased;
+}

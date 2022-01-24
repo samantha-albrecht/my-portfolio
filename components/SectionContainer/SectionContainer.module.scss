@@ -1,0 +1,186 @@
+@import "../../design-tokens/scss-variables.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: auto minmax(100px, 1080px) auto;
+  grid-template-rows: 48px auto 48px;
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 16px;
+
+  @media (min-width: $breakpoint-l) {
+    grid-template-rows: 48px auto 86px;
+  }
+}
+
+.backgroundContainer {
+  grid-area: 2 / 1 / 3 / 4;
+  border-radius: var(--border-radius-lg);
+  z-index: 1;
+}
+
+.guidesContainer {
+  grid-area: 1 / 2 / row-end / 3;
+  display: grid;
+  z-index: 2;
+
+  @media (min-width: $breakpoint-m) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-l) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.guide {
+  border-width: 1px;
+  border-style: dashed;
+  border-left-color: var(--guide-color);
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  opacity: 0.4;
+
+  &:nth-of-type(1),
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    display: none;
+  }
+
+  &:last-of-type {
+    border-right-color: var(--guide-color);
+  }
+
+  @media (min-width: $breakpoint-m) {
+    &:nth-of-type(1) {
+      display: unset;
+    }
+  }
+
+  @media (min-width: $breakpoint-l) {
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      display: unset;
+    }
+  }
+}
+
+.section {
+  &Header {
+    .gridLayout {
+      z-index: 10;
+      grid-template-rows: 16px 106px 16px;
+
+      @media (min-width: $breakpoint-l) {
+        grid-template-rows: 16px 70px 0;
+      }
+    }
+  }
+
+  &Hero {
+    background-color: var(--lt-card-color);
+    overflow-x: hidden;
+
+    .gridLayout {
+      grid-template-rows: 36px auto 36px;
+    }
+
+    @media (min-width: $breakpoint-l) {
+      background-color: transparent;
+
+      .gridLayout {
+        grid-template-rows: 16px auto 74px;
+      }
+
+      .backgroundContainer {
+        background-color: var(--lt-card-color);
+      }
+    }
+  }
+
+  &Work {
+    .gridLayout {
+      grid-template-rows: 16px auto auto 48px;
+    }
+
+    .backgroundContainer {
+      background-color: var(--md-card-color);
+    }
+
+    @media (min-width: $breakpoint-l) {
+      .gridLayout {
+        grid-template-rows: 48px auto auto 86px;
+      }
+    }
+
+    &Title {
+      .gridLayout {
+        grid-template-rows: 64px auto 16px;
+      }
+
+      @media (min-width: $breakpoint-l) {
+        .gridLayout {
+          grid-template-rows: 48px auto 48px;
+        }
+      }
+    }
+  }
+
+  &Process {
+    background-color: var(--lt-card-color);
+
+    @media (min-width: $breakpoint-l) {
+      background-color: transparent;
+
+      .backgroundContainer {
+        background-color: var(--lt-card-color);
+      }
+    }
+  }
+
+  &Books {
+    background-color: var(--lt-card-color);
+
+    @media (min-width: $breakpoint-l) {
+      background-color: transparent;
+
+      .backgroundContainer {
+        background-color: var(--lt-card-color);
+      }
+    }
+  }
+
+  &About {
+    background-color: var(--dk-card-color);
+
+    .gridLayout {
+      grid-template-rows: 48px auto 48px;
+    }
+
+    @media (min-width: $breakpoint-l) {
+      .gridLayout {
+        grid-template-rows: 142px auto 48px;
+      }
+    }
+  }
+
+  &Footer {
+    background-color: var(--dk-card-color);
+
+    .gridLayout {
+      grid-template-rows: 16px auto 16px;
+    }
+
+    @media (min-width: $breakpoint-l) {
+      .gridLayout {
+        grid-template-rows: 24px auto 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import "../../../design-tokens/scss-variables.scss";
+
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.contentInner {
+  grid-area: 1 / 1 / 2 / 5;
+  padding: 48px 16px;
+
+  @media (min-width: $breakpoint-l) {
+    grid-area: 1 / 2 / 2 / 5;
+    padding: 142px 16px 242px;
+  }
+}
+
+.squareLarge,
+.squareSmall {
+  display: none;
+
+  @media (min-width: $breakpoint-l) {
+    display: block;
+  }
+}
+
+.squareLarge {
+  position: absolute;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: end;
+  top: 60px;
+  height: 490px;
+  width: 490px;
+  background-color: var(--dk-square-color);
+  opacity: 0.4;
+}
+
+.squareSmall {
+  position: absolute;
+  grid-area: 1 / 4 / 2 / 5;
+  justify-self: end;
+  right: -180px;
+  bottom: -72px;
+  height: 180px;
+  width: 180px;
+  background-color: var(--lt-square-color);
+  opacity: 0.4;
+}
+
+.image {
+  grid-area: 1 / 1 / 2 / 2;
+  display: none;
+  padding: 16px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $breakpoint-l) {
+    display: block;
+  }
+}
+
+.caption {
+  @include caption();
+}
+
+.title {
+  @include title-3xl($margin: 0 0 24px 0);
+}

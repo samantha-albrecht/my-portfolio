@@ -1,0 +1,154 @@
+@import "../../design-tokens/scss-variables.scss";
+
+.contentContainer {
+  grid-area: 2 / 2 / 3 / 3;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: $breakpoint-l) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.projectAsideContainer {
+  // padding: 0 16px;
+  display: none;
+}
+
+.projectHeadingContainer {
+  padding: 0 16px 48px;
+}
+
+.projectBodyContainer {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  row-gap: 16px;
+}
+
+.projectTocItem {
+  display: block;
+  @include title-s();
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  color: var(--link-color);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(link-color-hover);
+    background-color: var(--page-view-background-color-hover);
+  }
+}
+
+.projectDetailsContainer {
+  padding: 60px 0 48px;
+  margin-top: 24px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 1px;
+    left: 16px;
+    top: 0;
+    background-color: var(--dk-description-line-color);
+  }
+}
+
+.projectCaption {
+  @include caption();
+}
+
+.projectTitle {
+  @include title-2xl();
+}
+
+.imageContainer {
+  width: 100%;
+  height: auto;
+  margin: 36px 0;
+  border-radius: var(--border-radius-lg);
+
+  &.imageMain {
+    margin: 0;
+    box-shadow: 0 3px 16px 0 rgba(79, 121, 255, 0.2);
+  }
+}
+
+.projectBodyTitle {
+  @include title-xl();
+  padding: 24px 16px 0;
+}
+
+.projectBodySubTitleLg {
+  @include title-l();
+  padding: 12px 16px 0;
+}
+
+.projectBodySubTitleMd {
+  @include title-m();
+  padding: 8px 16px 0;
+}
+
+.projectBodyParagraph {
+  //   @include body();
+  padding: 0 16px;
+}
+
+.projectBodyList {
+  list-style: disc;
+  margin: 8px 0 8px 36px;
+  padding: 0 16px;
+}
+
+.projectDetailsGroup {
+  padding: 24px 16px;
+}
+
+.projectDetailsTitle {
+  @include caption-s($margin: 0 0 8px 0);
+}
+
+.projectDetailsListItem {
+  font-size: var(--font-size-s);
+  margin: 4px 0;
+}
+
+@media (min-width: $breakpoint-m) {
+  .projectDetailsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .projectAsideContainer {
+    grid-area: 2 / 1 / 3 / 2;
+    display: block;
+    align-self: start;
+    position: sticky;
+    top: 120px;
+  }
+
+  .projectHeadingContainer {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 48px 16px;
+  }
+
+  .projectBodyContainer {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .projectDetailsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .imageContainer.imageSmall {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
